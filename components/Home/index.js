@@ -16,7 +16,7 @@ const FirstPage = (props) => {
           사주 분석으로 나만의 번호와 날짜를 받아보세요
         </Text>
       </View>
-      <StyledButton />
+      <StyledButton type="primary" />
     </View>
   );
 };

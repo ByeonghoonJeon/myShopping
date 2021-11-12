@@ -5,8 +5,7 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 10,
   },
-  button1: {
-    backgroundColor: "#BD1616",
+  primaryButton: {
     marginBottom: 15,
     marginTop: "100%",
     height: 40,
@@ -14,17 +13,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  button2: {
-    backgroundColor: "#3B0000",
+  secondaryButton: {
     height: 40,
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "white",
   },
-  text: {
+  primaryText: {
     fontSize: 16,
     fontWeight: "bold",
     color: "white",
+    textTransform: "uppercase",
+  },
+  secondaryText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#BD1616",
     textTransform: "uppercase",
   },
 });
