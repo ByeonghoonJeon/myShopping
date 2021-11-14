@@ -18,13 +18,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 40,
     fontWeight: "bold",
-    color: "#F9E4C8",
+    color: "#EEEEEE",
   },
   subTitle: {
     fontSize: 15,
     marginTop: "2%",
     fontWeight: "bold",
-    color: "#E02401",
+    color: "#BBBFCA",
   },
   image: {
     width: "100%",

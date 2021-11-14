@@ -5,8 +5,8 @@ import styles from "./style";
 const StyledButton = (props) => {
   const { type, content, onPress } = props;
 
-  const backgroundColor = type === "primary" ? "#BD1616" : "white";
-  const textColor = type === "primary" ? "white" : "red";
+  const backgroundColor = type === "primary" ? "#8D2828" : "white";
+  const textColor = type === "primary" ? "white" : "#646464";
   return (
     <View style={styles.container}>
       <Pressable
