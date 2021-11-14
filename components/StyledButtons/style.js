@@ -5,31 +5,15 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 10,
   },
-  primaryButton: {
-    marginBottom: 15,
-    marginTop: "100%",
+  button: {
     height: 40,
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
   },
-  secondaryButton: {
-    height: 40,
-    borderRadius: 20,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "white",
-  },
-  primaryText: {
+  text: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "white",
-    textTransform: "uppercase",
-  },
-  secondaryText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#BD1616",
     textTransform: "uppercase",
   },
 });

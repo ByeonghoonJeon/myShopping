@@ -1,7 +1,7 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import FirstPage from "./components/Home/index";
+import FirstPage from "./components/FirstPage/index";
 
 export default function App() {
   return (
