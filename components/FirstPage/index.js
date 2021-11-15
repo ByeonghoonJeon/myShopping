@@ -4,16 +4,15 @@ import StyledButton from "../StyledButtons";
 import styles from "./styles";
 
 const FirstPage = (props) => {
+  const { name, tagLine, image, tagLineUnderBar } = props;
   return (
     <View style={styles.mainContainer}>
-      <ImageBackground
-        source={require("../../assets/ruby.jpg")}
-        style={styles.image}
-      />
+      <ImageBackground source={image} style={styles.image} />
       <View style={styles.titles}>
-        <Text style={styles.title}>로또운 분석</Text>
+        <Text style={styles.title}>{name}</Text>
         <Text style={styles.subTitle}>
-          사주 분석으로 나만의 번호와 날짜를 받아보세요
+          {tagLine}
+          <Text style={styles.tagLineUnderBar}>{tagLineUnderBar}</Text>
         </Text>
       </View>
       <View style={styles.buttonsContainer}>

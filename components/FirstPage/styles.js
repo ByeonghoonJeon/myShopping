@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#BBBFCA",
   },
+  tagLineUnderBar: {
+    textDecorationLine: "underline",
+  },
   image: {
     width: "100%",
     height: "100%",

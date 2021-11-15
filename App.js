@@ -6,7 +6,12 @@ import FirstPage from "./components/FirstPage/index";
 export default function App() {
   return (
     <View style={styles.container}>
-      <FirstPage />
+      <FirstPage
+        name={"사주 로또 분석"}
+        tagLine={"내 사주로 분석하는 "}
+        tagLineUnderBar={"나만의 번호"}
+        image={require("./assets/main4.jpg")}
+      />
       <StatusBar style="auto" />
     </View>
   );
