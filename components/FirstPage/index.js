@@ -16,20 +16,22 @@ const FirstPage = (props) => {
           사주 분석으로 나만의 번호와 날짜를 받아보세요
         </Text>
       </View>
-      <StyledButton
-        type="primary"
-        content={"나만의 번호 받기"}
-        onPress={() => {
-          console.warn("Primary button is pressed");
-        }}
-      />
-      <StyledButton
-        type="secondary"
-        content={"더 알아보기"}
-        onPress={() => {
-          console.warn("Secondary button is pressed");
-        }}
-      />
+      <View style={styles.buttonsContainer}>
+        <StyledButton
+          type="primary"
+          content={"나만의 번호 받기"}
+          onPress={() => {
+            console.warn("Primary button is pressed");
+          }}
+        />
+        <StyledButton
+          type="secondary"
+          content={"더 알아보기"}
+          onPress={() => {
+            console.warn("Secondary button is pressed");
+          }}
+        />
+      </View>
     </View>
   );
 };
