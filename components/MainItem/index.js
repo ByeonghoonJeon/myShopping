@@ -3,8 +3,8 @@ import { View, Text, ImageBackground } from "react-native";
 import StyledButton from "../StyledButtons";
 import styles from "./styles";
 
-const FirstPage = (props) => {
-  const { name, tagLine, image, tagLineUnderBar } = props;
+const MainItem = (props) => {
+  const { name, tagLine, image, tagLineUnderBar } = props.main;
   return (
     <View style={styles.mainContainer}>
       <ImageBackground source={image} style={styles.image} />
@@ -35,4 +35,4 @@ const FirstPage = (props) => {
   );
 };
 
-export default FirstPage;
+export default MainItem;
