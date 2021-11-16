@@ -6,6 +6,7 @@ import styles from "./styles";
 import mains from "./mains";
 
 const MainList = (props) => {
+  console.log(mains);
   return (
     <View style={styles.container}>
       <FlatList

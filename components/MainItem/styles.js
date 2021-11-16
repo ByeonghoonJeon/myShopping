@@ -1,14 +1,8 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   mainContainer: {
     width: "100%",
-    height: "100%",
+    height: Dimensions.get("window").height,
   },
   titles: {
     marginTop: "25%",
@@ -28,6 +22,8 @@ const styles = StyleSheet.create({
   },
   tagLineUnderBar: {
     textDecorationLine: "underline",
+    color: "#BBBFCA",
+    fontWeight: "bold",
   },
   image: {
     width: "100%",
