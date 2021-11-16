@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, Dimensions } from "react-native";
 import MainItem from "../MainItem";
 
 import styles from "./styles";
@@ -12,6 +12,10 @@ const MainList = (props) => {
       <FlatList
         data={mains}
         renderItem={({ item }) => <MainItem main={item} />}
+        showsVerticalScrollIndicator={false}
+        snapToAlignment={"start"}
+        decelerationRat={"fast"}
+        snapToInterval={Dimensions.get("window").height}
       />
     </View>
   );
