@@ -1,10 +1,13 @@
 import React from "react";
+
 import { View, Text, ImageBackground } from "react-native";
 import StyledButton from "../StyledButtons";
 import styles from "./styles";
+import HomeScreen from "../Home/home";
 
 const MainItem = (props) => {
   const { name, tagLine, image, tagLineUnderBar } = props.main;
+
   return (
     <View style={styles.mainContainer}>
       <ImageBackground source={image} style={styles.image} />
@@ -20,7 +23,7 @@ const MainItem = (props) => {
           type="primary"
           content={"나만의 번호 받기"}
           onPress={() => {
-            console.warn("Primary button is pressed");
+            HomeScreen();
           }}
         />
         <StyledButton
