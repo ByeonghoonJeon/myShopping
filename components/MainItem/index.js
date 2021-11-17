@@ -3,32 +3,30 @@ import React from "react";
 import { View, Text, ImageBackground } from "react-native";
 import StyledButton from "../StyledButtons";
 import styles from "./styles";
-import HomeScreen from "../Home/home";
 
-const MainItem = (props) => {
-  const { name, tagLine, image, tagLineUnderBar } = props.main;
-
+const MainItem = ({ navigation }) => {
   return (
     <View style={styles.mainContainer}>
-      <ImageBackground source={image} style={styles.image} />
+      <ImageBackground
+        source={require("../../assets/main1.jpg")}
+        style={styles.image}
+      />
       <View style={styles.titles}>
-        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.title}>사주 로또 운세</Text>
         <Text style={styles.subTitle}>
-          {tagLine}
-          <Text style={styles.tagLineUnderBar}>{tagLineUnderBar}</Text>
+          내 사주로 보는
+          <Text style={styles.tagLineUnderBar}>로또 사야하는 날짜</Text>
         </Text>
       </View>
       <View style={styles.buttonsContainer}>
         <StyledButton
           type="primary"
           content={"나만의 번호 받기"}
-          onPress={() => {
-            HomeScreen();
-          }}
+          onPress={() => navigation.navigate("Home")}
         />
         <StyledButton
           type="secondary"
-          content={"더 알아보기"}
+          content="더 알아보기"
           onPress={() => {
             console.warn("Secondary button is pressed");
           }}
