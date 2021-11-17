@@ -1,6 +1,6 @@
 import React from "react";
-import { createStackNavigator } from "react-navigation-stack";
-import { NavigationContainer } from "@react-navigation/native";
+// import { createStackNavigator } from "react-navigation-stack";
+// import { NavigationContainer } from "@react-navigation/native";
 
 import MainScreen from "./components/MainScreen";
 import HomeScreen from "./components/Home/home";
@@ -19,5 +19,3 @@ import HomeScreen from "./components/Home/home";
 export default function App() {
   return <MainScreen />;
 }
-
-// export default App;

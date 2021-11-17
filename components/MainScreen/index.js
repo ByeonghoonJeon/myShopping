@@ -1,7 +1,7 @@
 import React from "react";
 
 import MainList from "../MainList/index";
-import { Header } from "../Header/index";
+import Header from "../Header/index";
 import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
 
