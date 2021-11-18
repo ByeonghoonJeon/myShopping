@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+const HeaderStyles = StyleSheet.create({
   container: {
     position: "absolute",
-    top: 50,
+    top: 60,
     zIndex: 100,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+export default HeaderStyles;
