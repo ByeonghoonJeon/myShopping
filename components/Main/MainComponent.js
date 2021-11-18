@@ -24,7 +24,7 @@ const MainComponent = ({ navigation }) => {
         <StyledButton
           type="primary"
           content={"나만의 번호 받기"}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Details")}
         />
         <StyledButton
           type="secondary"
