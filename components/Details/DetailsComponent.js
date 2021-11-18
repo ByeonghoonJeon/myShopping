@@ -6,7 +6,7 @@ import * as Animatable from "react-native-animatable";
 
 const DetailsComponent = ({ navigation }) => {
   return (
-    <ScrollView containerStyle={{}}>
+    <ScrollView containerStyle={{ backgroundColor: "#2B2B2B" }}>
       <Animatable.View animation="fadeInRightBig" duration={1000}>
         <Card
           containerStyle={{
