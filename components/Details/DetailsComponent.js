@@ -13,7 +13,7 @@ const DetailsComponent = ({ navigation }) => {
             backgroundColor: "#2B2B2B",
             borderColor: "#2B2B2B",
             shadowColor: "black",
-            marginTop: 50,
+            marginTop: 80,
           }}
         >
           <Card.FeaturedTitle style={{ textAlign: "center", color: "#FFC107" }}>
@@ -25,7 +25,7 @@ const DetailsComponent = ({ navigation }) => {
           >
             1. 로또 사는 날짜, 언제가 좋을까요?
           </Text>
-          <Card.Image source={require("../../assets/main3.jpg")}></Card.Image>
+          <Card.Image source={require("../../assets/date.jpg")}></Card.Image>
           <Text
             style={{
               marginTop: 20,
@@ -45,7 +45,7 @@ const DetailsComponent = ({ navigation }) => {
           >
             2. 로또 번호, 아무거나 찍지 마세요!
           </Text>
-          <Card.Image source={require("../../assets/main3.jpg")}></Card.Image>
+          <Card.Image source={require("../../assets/aim.jpg")}></Card.Image>
           <Text
             style={{
               marginTop: 20,
@@ -55,8 +55,8 @@ const DetailsComponent = ({ navigation }) => {
             }}
           >
             {"  "}내 사주를 바탕으로 나만의 번호를 받아보세요. 나의 사주와,
-            로또운이 들어오는 날짜, 시간 등을 조합하여 만들어진 최적의 번호를
-            가져가세요!
+            로또운이 들어오는 날짜, 시간 등을 조합하여 만들어진 나만을 위한
+            최적의 번호를 가져가세요!
           </Text>
           <Card.Divider />
           <Text
@@ -64,7 +64,9 @@ const DetailsComponent = ({ navigation }) => {
           >
             3. 의미없는 번호를 받느라 돈을 많이 쓰지 마세요!
           </Text>
-          <Card.Image source={require("../../assets/main3.jpg")}></Card.Image>
+          <Card.Image
+            source={require("../../assets/discount.jpg")}
+          ></Card.Image>
           <Text
             style={{
               marginTop: 20,
@@ -82,7 +84,7 @@ const DetailsComponent = ({ navigation }) => {
               marginLeft: 0,
               marginRight: 0,
               marginBottom: 0,
-              backgroundColor: "#CE1212",
+              backgroundColor: "#8D2828",
             }}
             title="  나만의 번호 가져가기"
             onPress={() => d}

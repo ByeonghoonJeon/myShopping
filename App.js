@@ -25,7 +25,15 @@ function MainScreen() {
         initialRouteName="Main"
       >
         <Stack.Screen name="Main" component={MainComponent} />
-        <Stack.Screen name="Details" component={DetailsComponent} />
+        <Stack.Screen
+          name="Details"
+          component={DetailsComponent}
+          options={{
+            title: "더 알아보기",
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "white",
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

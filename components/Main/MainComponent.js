@@ -24,14 +24,14 @@ const MainComponent = ({ navigation }) => {
         <StyledButton
           type="primary"
           content={"나만의 번호 받기"}
-          onPress={() => navigation.navigate("Details")}
+          onPress={() => {
+            console.warn("Secondary button is pressed");
+          }}
         />
         <StyledButton
           type="secondary"
           content="더 알아보기"
-          onPress={() => {
-            console.warn("Secondary button is pressed");
-          }}
+          onPress={() => navigation.navigate("Details")}
         />
       </View>
     </View>
