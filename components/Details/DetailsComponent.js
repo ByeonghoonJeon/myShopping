@@ -1,18 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { Text, ScrollView } from "react-native";
-import { Card, Button, Icon } from "react-native-elements";
+import { Card, Button } from "react-native-elements";
 
 import * as Animatable from "react-native-animatable";
 
 const DetailsComponent = ({ navigation }) => {
   return (
-    <ScrollView containerStyle={{ backgroundColor: "#2B2B2B" }}>
+    <ScrollView style={{ backgroundColor: "#2B2B2B" }}>
       <Animatable.View animation="fadeInRightBig" duration={1000}>
         <Card
           containerStyle={{
             backgroundColor: "#2B2B2B",
             borderColor: "#2B2B2B",
             shadowColor: "black",
+            marginTop: 50,
           }}
         >
           <Card.FeaturedTitle style={{ textAlign: "center", color: "#FFC107" }}>
