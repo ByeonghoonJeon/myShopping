@@ -84,7 +84,7 @@ const LoginComponent = ({ navigation }) => {
       </View>
       <TouchableOpacity
         style={LoginStyles.singupBtn}
-        onPress={() => navigation.navigate("Details")}
+        onPress={() => navigation.navigate("SignUp")}
       >
         <Text style={LoginStyles.loginText}>
           <Icon name="user-plus" size={20} color="#fff" /> 무료 체험하기

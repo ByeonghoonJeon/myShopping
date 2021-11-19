@@ -20,7 +20,6 @@ const SignUpStyles = StyleSheet.create({
     width: "70%",
     height: 45,
     marginBottom: 20,
-
     alignItems: "center",
   },
 
@@ -28,7 +27,19 @@ const SignUpStyles = StyleSheet.create({
     height: 50,
     flex: 1,
     padding: 10,
-    marginLeft: 20,
+    textAlign: "center",
+  },
+
+  GenderPicker: {
+    height: 50,
+    width: "70%",
+    marginBottom: 20,
+    backgroundColor: "white",
+    borderRadius: 25,
+    color: "#fff",
+    alignSelf: "center",
+    justifyContent: "center",
+    padding: 20,
   },
 
   forgot_button: {
