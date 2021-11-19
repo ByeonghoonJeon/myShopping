@@ -7,16 +7,8 @@ import {
   TouchableOpacity,
   ImageBackground,
 } from "react-native";
-
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import {
-  faQuestionCircle,
-  faCheckSquare,
-  faHome,
-  faTrophy,
-  faUserCircle,
-} from "@fortawesome/free-solid-svg-icons";
-
+import { Card } from "react-native-elements";
+import Icon from "react-native-vector-icons/FontAwesome";
 import LoginStyles from "./LoginStyles";
 
 const LoginComponent = ({ navigation }) => {
@@ -55,7 +47,9 @@ const LoginComponent = ({ navigation }) => {
       </TouchableOpacity>
 
       <TouchableOpacity style={LoginStyles.loginBtn}>
-        <Text style={LoginStyles.loginText}>로그인</Text>
+        <Text style={LoginStyles.loginText}>
+          <Icon name="sign-in" size={20} color="#fff" /> 로그인
+        </Text>
       </TouchableOpacity>
 
       <View
@@ -89,7 +83,10 @@ const LoginComponent = ({ navigation }) => {
         <View style={{ flex: 1, height: 1, backgroundColor: "white" }} />
       </View>
       <TouchableOpacity style={LoginStyles.singupBtn}>
-        <Text style={LoginStyles.loginText}>회원가입</Text>
+        <Text style={LoginStyles.loginText}>
+          <Icon name="user-plus" size={20} color="#fff" /> 회원가입하고 무료로
+          번호 받기
+        </Text>
       </TouchableOpacity>
     </View>
   );
