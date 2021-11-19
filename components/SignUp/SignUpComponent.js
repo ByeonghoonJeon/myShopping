@@ -9,15 +9,30 @@ import {
   Picker,
   Button,
   Platform,
+  SafeAreaView,
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import SignUpStyles from "./SignUpStyles";
-import DatePicker from "react-native-date-picker";
+import DateTimePicker from "@react-native-community/datetimepicker";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedValue, setSelectedValue] = useState("female");
+  const [mydate, setDate] = useState(new Date());
+  const [displaymode, setMode] = useState("date");
+  const [isDisplayDate, setShow] = useState(false);
+  const changeSelectedDate = (event, selectedDate) => {
+    const currentDate = selectedDate || mydate;
+    setDate(currentDate);
+  };
+  const showMode = (currentMode) => {
+    setShow(true);
+    setMode(currentMode);
+  };
+  const displayDatepicker = () => {
+    showMode("date");
+  };
 
   return (
     <View style={SignUpStyles.container}>
@@ -60,6 +75,17 @@ const SignUpComponent = ({ navigation }) => {
           <Picker.Item label="여성" value="female" />
           <Picker.Item label="남성" value="male" />
         </Picker>
+      </View>
+
+      <View>
+        <DateTimePicker
+          testID="dateTimePicker"
+          value={mydate}
+          mode={displaymode}
+          is24Hour={true}
+          display="spinner"
+          onChange={changeSelectedDate}
+        />
       </View>
 
       <TouchableOpacity style={SignUpStyles.loginBtn}>
