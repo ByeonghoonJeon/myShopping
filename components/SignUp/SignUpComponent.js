@@ -8,28 +8,15 @@ import {
   ImageBackground,
   Picker,
   Button,
+  Platform,
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import SignUpStyles from "./SignUpStyles";
-import DateField from "react-native-datefield";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedValue, setSelectedValue] = useState("female");
-  const [showDatePicker, setShowDatePicker] = useState(false);
-  const openDatePicker = () => {
-    setShowDatePicker(true);
-  };
-
-  const onCancel = () => {
-    setShowDatePicker(false);
-  };
-
-  const onConfirm = (date) => {
-    setShowDatePicker(false);
-    console.log(date.getDate());
-  };
 
   return (
     <View style={SignUpStyles.container}>
@@ -72,23 +59,6 @@ const SignUpComponent = ({ navigation }) => {
           <Picker.Item label="여성" value="female" />
           <Picker.Item label="남성" value="male" />
         </Picker>
-      </View>
-      <View>
-        <DateField onSubmit={(value) => console.warn(value)} />
-
-        <DateField
-          labelDate="Input date"
-          labelMonth="Input month"
-          labelYear="Input year"
-          onSubmit={(value) => console.warn(value)}
-        />
-
-        <DateField
-          disabled
-          defaultValue={new Date()}
-          styleInput={{ fontSize: 15 }}
-          containerStyle={{ marginVertical: 20 }}
-        />
       </View>
 
       <TouchableOpacity style={SignUpStyles.loginBtn}>
