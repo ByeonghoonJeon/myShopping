@@ -7,15 +7,29 @@ import {
   TouchableOpacity,
   ImageBackground,
   Picker,
+  Button,
 } from "react-native";
-import { Card } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import SignUpStyles from "./SignUpStyles";
+import DateField from "react-native-datefield";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [selectedValue, setSelectedValue] = useState("femail");
+  const [selectedValue, setSelectedValue] = useState("female");
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const openDatePicker = () => {
+    setShowDatePicker(true);
+  };
+
+  const onCancel = () => {
+    setShowDatePicker(false);
+  };
+
+  const onConfirm = (date) => {
+    setShowDatePicker(false);
+    console.log(date.getDate());
+  };
 
   return (
     <View style={SignUpStyles.container}>
@@ -59,12 +73,23 @@ const SignUpComponent = ({ navigation }) => {
           <Picker.Item label="남성" value="male" />
         </Picker>
       </View>
+      <View>
+        <DateField onSubmit={(value) => console.warn(value)} />
 
-      <TouchableOpacity>
-        <Text style={SignUpStyles.forgot_button}>
-          비밀번호를 잊으셨으면 여기를 클릭하세요
-        </Text>
-      </TouchableOpacity>
+        <DateField
+          labelDate="Input date"
+          labelMonth="Input month"
+          labelYear="Input year"
+          onSubmit={(value) => console.warn(value)}
+        />
+
+        <DateField
+          disabled
+          defaultValue={new Date()}
+          styleInput={{ fontSize: 15 }}
+          containerStyle={{ marginVertical: 20 }}
+        />
+      </View>
 
       <TouchableOpacity style={SignUpStyles.loginBtn}>
         <Text style={SignUpStyles.loginText}>
