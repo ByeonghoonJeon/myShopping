@@ -4,6 +4,7 @@ import { Card, Button } from "react-native-elements";
 import Footer from "../Footer/FooterComponent";
 
 import * as Animatable from "react-native-animatable";
+import LoginComponent from "../Login/LoginComponent";
 
 const DetailsComponent = ({ navigation }) => {
   return (
@@ -116,7 +117,7 @@ const DetailsComponent = ({ navigation }) => {
               backgroundColor: "#8D2828",
             }}
             title="  나만의 번호 가져가기"
-            onPress={() => d}
+            onPress={() => navigation.navigate("Login")}
           />
         </Card>
       </Animatable.View>
