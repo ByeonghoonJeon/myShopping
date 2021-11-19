@@ -1,25 +1,25 @@
 import { StyleSheet } from "react-native";
 
-const HeaderStyles = StyleSheet.create({
+const FooterStyles = StyleSheet.create({
   container: {
-    position: "absolute",
-    top: 50,
-    zIndex: 100,
+    bottom: 5,
+    marginTop: 20,
+    marginBottom: 10,
     flexDirection: "row",
     justifyContent: "center",
     width: "100%",
     paddingHorizontal: 20,
   },
-  logo: {
-    width: 100,
-    height: 20,
-    resizeMode: "contain",
-  },
+
   menu: {
     width: 25,
     height: 25,
     resizeMode: "contain",
   },
+  text: {
+    color: "#E0E0EC",
+    fontSize: 10,
+  },
 });
 
-export default HeaderStyles;
+export default FooterStyles;

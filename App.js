@@ -29,9 +29,10 @@ function MainScreen() {
           name="Details"
           component={DetailsComponent}
           options={{
-            title: "더 알아보기",
             headerStyle: { backgroundColor: "#8D2828" },
-            headerTintColor: "white",
+            headerTintColor: "#fff",
+            headerTitle: "사주 로또가 뭐에요?",
+            headerTitleStyle: { fontWeight: "bold" },
           }}
         />
       </Stack.Navigator>
