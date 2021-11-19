@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MainComponent from "./components/Main/MainComponent";
 import DetailsComponent from "./components/Details/DetailsComponent";
-import HomeComponent from "./components/Home/HomeComponent";
+import LoginComponent from "./components/Login/LoginComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +32,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "사주 로또가 뭐에요?",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={LoginComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "로그인 하기",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />

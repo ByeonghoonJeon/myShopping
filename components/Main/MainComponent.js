@@ -24,9 +24,7 @@ const MainComponent = ({ navigation }) => {
         <StyledButton
           type="primary"
           content={"나만의 번호 받기"}
-          onPress={() => {
-            console.warn("Secondary button is pressed");
-          }}
+          onPress={() => navigation.navigate("Login")}
         />
         <StyledButton
           type="secondary"
