@@ -41,6 +41,17 @@ const SignUpStyles = StyleSheet.create({
     justifyContent: "center",
     padding: 20,
   },
+  DatePicker: {
+    height: 50,
+    width: "70%",
+    marginBottom: 20,
+    backgroundColor: "white",
+    borderRadius: 25,
+    color: "#fff",
+    alignSelf: "center",
+    justifyContent: "center",
+    padding: 20,
+  },
 
   forgot_button: {
     height: 30,
