@@ -1,10 +1,11 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 const SignUpStyles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#2B2B2B",
     alignItems: "center",
     justifyContent: "center",
+    width: "100%",
+    height: "100%",
   },
 
   image: {

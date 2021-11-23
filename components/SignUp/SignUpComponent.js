@@ -10,29 +10,17 @@ import {
   Button,
   Platform,
   SafeAreaView,
+  StyleSheet,
+  ScrollView,
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import SignUpStyles from "./SignUpStyles";
-import DateTimePicker from "@react-native-community/datetimepicker";
+import DatePicker from "react-native-datepicker";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedValue, setSelectedValue] = useState("female");
-  const [mydate, setDate] = useState(new Date());
-  const [displaymode, setMode] = useState("date");
-  const [isDisplayDate, setShow] = useState(false);
-  const changeSelectedDate = (event, selectedDate) => {
-    const currentDate = selectedDate || mydate;
-    setDate(currentDate);
-  };
-  const showMode = (currentMode) => {
-    setShow(true);
-    setMode(currentMode);
-  };
-  const displayDatepicker = () => {
-    showMode("date");
-  };
 
   return (
     <View style={SignUpStyles.container}>
@@ -76,15 +64,32 @@ const SignUpComponent = ({ navigation }) => {
           <Picker.Item label="남성" value="male" />
         </Picker>
       </View>
-
       <View>
-        <DateTimePicker
-          testID="dateTimePicker"
-          value={mydate}
-          mode={displaymode}
-          is24Hour={true}
-          display="spinner"
-          onChange={changeSelectedDate}
+        <DatePicker
+          style={{ width: 200 }}
+          date={this.state.date}
+          mode="date"
+          placeholder="select date"
+          format="YYYY-MM-DD"
+          minDate="2016-05-01"
+          maxDate="2016-06-01"
+          confirmBtnText="Confirm"
+          cancelBtnText="Cancel"
+          customStyles={{
+            dateIcon: {
+              position: "absolute",
+              left: 0,
+              top: 4,
+              marginLeft: 0,
+            },
+            dateInput: {
+              marginLeft: 36,
+            },
+            // ... You can check the source to find the other keys.
+          }}
+          onDateChange={(date) => {
+            this.setState({ date: date });
+          }}
         />
       </View>
 
@@ -133,5 +138,6 @@ const SignUpComponent = ({ navigation }) => {
     </View>
   );
 };
+const styles = StyleSheet.create({});
 
 export default SignUpComponent;
