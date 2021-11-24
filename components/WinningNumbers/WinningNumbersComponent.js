@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, ScrollView, FlatList, StyleSheet } from "react-native";
 import { Card, Button } from "react-native-elements";
-import { WINNINGNUMBERS } from "../WinningNumbers/numberList.js";
+import { WINNINGNUMBERS } from "./numberList.js";
 import * as Animatable from "react-native-animatable";
 
 const Circle = (props) => {
