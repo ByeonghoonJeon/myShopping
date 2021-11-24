@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+const StyledButtonsStyles = StyleSheet.create({
   container: {
     width: "100%",
     padding: 10,
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+export default StyledButtonsStyles;

@@ -1,35 +1,35 @@
 import React from "react";
 
 import { View, Text, ImageBackground } from "react-native";
-import StyledButton from "../StyledButtons";
-import styles from "./mainStyles";
+import StyledButton from "../StyledButtons/StyledButtonsComponent";
+import MainStyles from "./MainStyles";
 import Header from "../Header/HeaderComponent";
 
 const MainComponent = ({ navigation }) => {
   return (
-    <View style={styles.mainContainer}>
+    <View style={MainStyles.mainContainer}>
       <ImageBackground
         source={require("../../assets/main1.jpg")}
-        style={styles.image}
+        style={MainStyles.image}
       />
       <Header />
-      <View style={styles.titles}>
-        <Text style={styles.title}>사주 로또 운세</Text>
-        <Text style={styles.subTitle}>
+      <View style={MainStyles.titles}>
+        <Text style={MainStyles.title}>사주 로또 운세</Text>
+        <Text style={MainStyles.subTitle}>
           내 사주로 보는,{" "}
-          <Text style={styles.tagLineUnderBar}>로또 사야하는 날짜</Text>
+          <Text style={MainStyles.tagLineUnderBar}>로또 사야하는 날짜</Text>
         </Text>
       </View>
-      <View style={styles.buttonsContainer}>
+      <View style={MainStyles.buttonsContainer}>
         <StyledButton
           type="primary"
-          content={"나만의 번호 받기"}
+          content={"Let's Get Started!"}
           onPress={() => navigation.navigate("Login")}
         />
         <StyledButton
           type="secondary"
-          content="더 알아보기"
-          onPress={() => navigation.navigate("Details")}
+          content="Learn More"
+          onPress={() => navigation.navigate("LearnMore")}
         />
       </View>
     </View>

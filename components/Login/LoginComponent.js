@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   ImageBackground,
 } from "react-native";
-import { Card } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import LoginStyles from "./LoginStyles";
 
@@ -40,7 +39,7 @@ const LoginComponent = ({ navigation }) => {
         />
       </View>
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
         <Text style={LoginStyles.forgot_button}>
           비밀번호를 잊으셨으면 여기를 클릭하세요
         </Text>

@@ -6,7 +6,7 @@ import Footer from "../Footer/FooterComponent";
 import * as Animatable from "react-native-animatable";
 import LoginComponent from "../Login/LoginComponent";
 
-const DetailsComponent = ({ navigation }) => {
+const LearnMoreComponent = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#2B2B2B" }}>
       <Animatable.View animation="fadeInRightBig" duration={1000}>
@@ -126,4 +126,4 @@ const DetailsComponent = ({ navigation }) => {
   );
 };
 
-export default DetailsComponent;
+export default LearnMoreComponent;

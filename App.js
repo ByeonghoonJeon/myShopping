@@ -4,9 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MainComponent from "./components/Main/MainComponent";
-import DetailsComponent from "./components/Details/DetailsComponent";
+import LearnMoreComponent from "./components/LearnMoreComponent/LearnMoreComponent";
 import LoginComponent from "./components/Login/LoginComponent";
 import SignUpComponent from "./components/SignUp/SignUpComponent";
+import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,12 +28,12 @@ function MainScreen() {
       >
         <Stack.Screen name="Main" component={MainComponent} />
         <Stack.Screen
-          name="Details"
-          component={DetailsComponent}
+          name="LearnMore"
+          component={LearnMoreComponent}
           options={{
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
-            headerTitle: "사주 로또가 뭐에요?",
+            headerTitle: "Learn More",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
@@ -42,7 +43,7 @@ function MainScreen() {
           options={{
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
-            headerTitle: "로그인 하기",
+            headerTitle: "Login",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
@@ -52,7 +53,17 @@ function MainScreen() {
           options={{
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
-            headerTitle: "처음으로 등록하기",
+            headerTitle: "Sign Up",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="ForgotPassword"
+          component={ForgotPasswordComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Forgot Password",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
