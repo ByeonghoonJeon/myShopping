@@ -8,6 +8,7 @@ import LearnMoreComponent from "./components/LearnMoreComponent/LearnMoreCompone
 import LoginComponent from "./components/Login/LoginComponent";
 import SignUpComponent from "./components/SignUp/SignUpComponent";
 import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordComponent";
+import HomeComponent from "./components/HomeComponent/HomeComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,7 +25,7 @@ function MainScreen() {
           headerTitle: "",
           headerShadowVisible: false,
         }}
-        initialRouteName="Main"
+        initialRouteName="Home"
       >
         <Stack.Screen name="Main" component={MainComponent} />
         <Stack.Screen
@@ -54,6 +55,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "Sign Up",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={HomeComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Home",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
