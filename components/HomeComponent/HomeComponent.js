@@ -6,7 +6,7 @@ const HomeComponent = ({ navigation }) => {
   return (
     <ScrollView style={HomeStyles.scrollContainer}>
       <ImageBackground
-        source={require("../../assets/main3.jpg")}
+        source={require("../../assets/Home.jpg")}
         style={HomeStyles.image}
       />
       <View style={HomeStyles.container}>
