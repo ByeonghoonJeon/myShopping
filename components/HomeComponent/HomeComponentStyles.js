@@ -29,9 +29,38 @@ const HomeStyles = StyleSheet.create({
   point: {
     marginLeft: "auto",
     marginRight: 20,
+    paddingBottom: 0,
+    marginBottom: 0,
+    fontSize: 33,
+  },
+  viewDetail: {
+    marginLeft: "auto",
+    marginRight: 20,
+    marginTop: 0,
+    paddingTop: 0,
+  },
+  winningNumbers: {
+    color: "grey",
+    marginRight: "auto",
+    marginLeft: "auto",
+    marginTop: 20,
+    textAlign: "center",
+  },
+  numbers: {
+    marginRight: "auto",
+    marginLeft: "auto",
     marginBottom: 15,
     paddingBottom: 0,
     fontSize: 30,
+    fontWeight: "bold",
+  },
+  winnersComments: {
+    marginTop: 20,
+    marginBottom: 20,
+    marginRight: "auto",
+    marginLeft: "auto",
+    fontSize: 30,
+    fontWeight: "bold",
   },
 });
 
