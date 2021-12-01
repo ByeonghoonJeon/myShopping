@@ -17,7 +17,9 @@ const MainComponent = ({ navigation }) => {
         <Text style={MainStyles.title}>사주 로또 운세</Text>
         <Text style={MainStyles.subTitle}>
           내 사주로 보는,{" "}
-          <Text style={MainStyles.tagLineUnderBar}>로또 사야하는 날짜</Text>
+          <Text style={MainStyles.tagLineUnderBar}>
+            로또 사야하는 날짜와 번호
+          </Text>
         </Text>
       </View>
       <View style={MainStyles.buttonsContainer}>

@@ -87,7 +87,7 @@ const HomeStyles = StyleSheet.create({
     fontWeight: "bold",
   },
   winnersCommentsText: {
-    color: "white",
+    color: "rgb(16, 86, 82)",
     fontWeight: "bold",
     marginRight: "auto",
     marginLeft: "auto",
@@ -117,16 +117,18 @@ const HomeStyles = StyleSheet.create({
     backgroundColor: "rgba(145, 31, 39, 0.75)",
   },
   WinningNumbersCard: {
-    backgroundColor: "rgba(255, 171, 76, 0.8)",
+    backgroundColor: "rgba(255, 171, 76, 0.7)",
   },
   GetYourNumberCard: {
-    backgroundColor: "rgba(16, 86, 82, 0.8)",
+    backgroundColor: "rgba(16, 86, 82, 0.7)",
   },
   winnerCommentCard: {
-    backgroundColor: "rgba(251, 243, 228, 0.5)",
+    backgroundColor: "rgba(251, 243, 228, 0.85)",
   },
   AboutCard: {
-    backgroundColor: "rgba(147, 181, 198, 0.6)",
+    backgroundColor: "rgba(147, 181, 198, 0.85)",
+    marginBottom: 0,
+    paddingBottom: 0,
   },
 });
 

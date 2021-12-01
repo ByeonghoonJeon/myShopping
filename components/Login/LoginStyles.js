@@ -20,14 +20,12 @@ const LoginStyles = StyleSheet.create({
     width: "70%",
     height: 45,
     marginBottom: 20,
-
     alignItems: "center",
   },
 
   TextInput: {
-    height: 50,
-    flex: 1,
-    padding: 10,
+    height: 45,
+    textAlign: "center",
   },
 
   forgot_button: {
@@ -60,6 +58,7 @@ const LoginStyles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
     fontSize: 18,
+    textAlign: "center",
   },
 });
 

@@ -25,7 +25,7 @@ function MainScreen() {
           headerTitle: "",
           headerShadowVisible: false,
         }}
-        initialRouteName="Home"
+        initialRouteName="Main"
       >
         <Stack.Screen name="Main" component={MainComponent} />
         <Stack.Screen

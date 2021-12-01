@@ -39,7 +39,7 @@ const SignUpComponent = ({ navigation }) => {
       <View style={SignUpStyles.inputView}>
         <TextInput
           style={SignUpStyles.TextInput}
-          placeholder="비밀번호 설정"
+          placeholder="Password"
           placeholderTextColor="grey"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -48,7 +48,7 @@ const SignUpComponent = ({ navigation }) => {
       <View style={SignUpStyles.inputView}>
         <TextInput
           style={SignUpStyles.TextInput}
-          placeholder="비밀번호 확인"
+          placeholder="Password Verification"
           placeholderTextColor="grey"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -59,56 +59,22 @@ const SignUpComponent = ({ navigation }) => {
           selectedValue={selectedValue}
           onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
         >
-          <Picker.Item label="여성" value="female" />
-          <Picker.Item label="남성" value="male" />
+          <Picker.Item label="Female" value="female" />
+          <Picker.Item label="Male" value="male" />
         </Picker>
       </View>
 
-      <TouchableOpacity style={SignUpStyles.loginBtn}>
-        <Text style={SignUpStyles.loginText}>
-          <Icon name="sign-in" size={20} color="#fff" /> 로그인
-        </Text>
-      </TouchableOpacity>
-
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          marginLeft: 30,
-          marginRight: 30,
-          marginTop: 10,
-        }}
+      <TouchableOpacity
+        style={SignUpStyles.loginBtn}
+        onPress={() => navigation.navigate("Login")}
       >
-        <View
-          style={{
-            flex: 1,
-            height: 1,
-            backgroundColor: "white",
-          }}
-        />
-        <View>
-          <Text
-            style={{
-              width: 50,
-              textAlign: "center",
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            또는
-          </Text>
-        </View>
-        <View style={{ flex: 1, height: 1, backgroundColor: "white" }} />
-      </View>
-      <TouchableOpacity style={SignUpStyles.singupBtn}>
         <Text style={SignUpStyles.loginText}>
-          <Icon name="user-plus" size={20} color="#fff" /> 무료 체험하기
-          (신규등록 이벤트)
+          <Icon name="sign-in" size={20} color="#fff" /> Sign Up
         </Text>
       </TouchableOpacity>
+      <Text style={SignUpStyles.footer}>Start your own experience here</Text>
     </View>
   );
 };
-const styles = StyleSheet.create({});
 
 export default SignUpComponent;

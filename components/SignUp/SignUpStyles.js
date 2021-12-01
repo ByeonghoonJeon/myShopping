@@ -85,6 +85,40 @@ const SignUpStyles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 18,
   },
+  modalContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+    padding: 50,
+  },
+  pickedDateContainer: {
+    padding: 20,
+    backgroundColor: "#eee",
+    borderRadius: 10,
+  },
+  pickedDate: {
+    fontSize: 18,
+    color: "black",
+  },
+  btnContainer: {
+    padding: 30,
+  },
+  // This only works on iOS
+  datePicker: {
+    width: 320,
+    height: 260,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
+  },
+  footer: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 22,
+    marginTop: 30,
+  },
 });
 
 export default SignUpStyles;

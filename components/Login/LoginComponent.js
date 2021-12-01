@@ -24,7 +24,7 @@ const LoginComponent = ({ navigation }) => {
       <View style={LoginStyles.inputView}>
         <TextInput
           style={LoginStyles.TextInput}
-          placeholder="이곳에 이메일을 입력하세요"
+          placeholder="Please input your email here"
           placeholderTextColor="grey"
           onChangeText={(email) => setEmail(email)}
         />
@@ -32,7 +32,7 @@ const LoginComponent = ({ navigation }) => {
       <View style={LoginStyles.inputView}>
         <TextInput
           style={LoginStyles.TextInput}
-          placeholder="비밀번호"
+          placeholder="Your password here"
           placeholderTextColor="grey"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -41,13 +41,16 @@ const LoginComponent = ({ navigation }) => {
 
       <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
         <Text style={LoginStyles.forgot_button}>
-          비밀번호를 잊으셨으면 여기를 클릭하세요
+          Forgot your password? Click here!
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={LoginStyles.loginBtn}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Home")}
+        style={LoginStyles.loginBtn}
+      >
         <Text style={LoginStyles.loginText}>
-          <Icon name="sign-in" size={20} color="#fff" /> 로그인
+          <Icon name="sign-in" size={20} color="#fff" /> Login
         </Text>
       </TouchableOpacity>
 
@@ -86,8 +89,8 @@ const LoginComponent = ({ navigation }) => {
         onPress={() => navigation.navigate("SignUp")}
       >
         <Text style={LoginStyles.loginText}>
-          <Icon name="user-plus" size={20} color="#fff" /> 무료 체험하기
-          (신규등록 이벤트)
+          <Icon name="user-plus" size={20} color="#fff" /> Free try {"\n"}(New
+          member's promotion)
         </Text>
       </TouchableOpacity>
     </View>
