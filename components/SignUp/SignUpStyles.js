@@ -1,11 +1,16 @@
 import { Dimensions, StyleSheet } from "react-native";
 const SignUpStyles = StyleSheet.create({
-  container: {
+  scrollContainer: {
     backgroundColor: "#2B2B2B",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-    height: "100%",
+    marginTop: 70,
+  },
+  container: {
+    marginBottom: 0,
+    marginTop: 30,
+    paddingBottom: 20,
+    width: "90%",
+
+    alignSelf: "center",
   },
 
   image: {
@@ -18,40 +23,64 @@ const SignUpStyles = StyleSheet.create({
   inputView: {
     backgroundColor: "#fff",
     borderRadius: 30,
-    width: "70%",
+    width: "90%",
     height: 45,
-    marginBottom: 20,
+    marginTop: 20,
     alignItems: "center",
-  },
-
-  TextInput: {
-    height: 50,
-    flex: 1,
-    padding: 10,
     textAlign: "center",
+    alignSelf: "center",
   },
 
   GenderPicker: {
     height: 50,
-    width: "70%",
-    marginBottom: 20,
+    width: "40%",
+    marginTop: 20,
     backgroundColor: "white",
     borderRadius: 25,
     color: "#fff",
     alignSelf: "center",
     justifyContent: "center",
-    padding: 20,
+    paddingLeft: 20,
+  },
+  YearPicker: {
+    height: 50,
+    width: "30%",
+    marginTop: 20,
+    backgroundColor: "white",
+    borderRadius: 25,
+    color: "#fff",
+    alignSelf: "center",
+    justifyContent: "center",
+    paddingLeft: 10,
+  },
+  MonthPicker: {
+    height: 50,
+    width: "30%",
+    marginTop: 20,
+    backgroundColor: "white",
+    borderRadius: 25,
+    color: "#fff",
+    alignSelf: "center",
+    justifyContent: "center",
+    paddingLeft: 10,
+    marginLeft: 10,
+    marginRight: 10,
   },
   DatePicker: {
     height: 50,
-    width: "70%",
-    marginBottom: 20,
+    width: "30%",
+    marginTop: 20,
     backgroundColor: "white",
     borderRadius: 25,
     color: "#fff",
     alignSelf: "center",
     justifyContent: "center",
-    padding: 20,
+    paddingLeft: 10,
+  },
+  pickerContainer: {
+    flexDirection: "row",
+    display: "flex",
+    justifyContent: "center",
   },
 
   forgot_button: {
