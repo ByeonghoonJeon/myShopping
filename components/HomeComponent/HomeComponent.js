@@ -29,7 +29,7 @@ const HomeComponent = ({ navigation }) => {
           Welcome "USER NAME", {" \n"}Feeling Lucky isn't it?
         </Text>
 
-        <Card>
+        <Card style={HomeStyles.MyPointCard}>
           <Text style={HomeStyles.cardSubtitle}>My Point </Text>
           <Text style={HomeStyles.point}>3,200 P</Text>
           <CardButton
@@ -59,7 +59,7 @@ const HomeComponent = ({ navigation }) => {
             />
           </CardAction>
         </Card>
-        <Card>
+        <Card style={HomeStyles.WinningNumbersCard}>
           <Text style={HomeStyles.winningNumbers}>
             WINNING NUMBER{"\n"}CONGRATS!{" "}
           </Text>
@@ -71,17 +71,20 @@ const HomeComponent = ({ navigation }) => {
                 console.warn("Clicked [See all history]");
               }}
               title="See all history"
-              color="#FEB557"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
+              color="#BD1616"
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
             />
           </CardAction>
         </Card>
-        <Card>
-          <Text style={HomeStyles.winningNumbers}>
+        <Card style={HomeStyles.GetYourNumberCard}>
+          <Text style={HomeStyles.GetYourNumberCardText}>
             Get your lucky numbers!{"\n"}Your Special Number for This Week
             Includes{" "}
           </Text>
-          <Text style={HomeStyles.numbers}>33</Text>
+          <Text style={HomeStyles.myNumber}>33</Text>
 
           <CardAction separator={true} inColumn={false}>
             <CardButton
@@ -89,13 +92,16 @@ const HomeComponent = ({ navigation }) => {
                 console.warn("Clicked [See my full numbers]");
               }}
               title="See my full numbers."
-              color="#FEB557"
+              color="white"
               style={{ marginLeft: "auto", marginRight: "auto" }}
             />
           </CardAction>
         </Card>
-        <Card>
+        <Card style={HomeStyles.winnerCommentCard}>
           <Text style={HomeStyles.winnersComments}>Winner's comments</Text>
+          <Text style={HomeStyles.winnersCommentsText}>
+            Don't you want to read our winners comments?
+          </Text>
 
           <CardAction separator={true} inColumn={false}>
             <CardButton
@@ -103,13 +109,18 @@ const HomeComponent = ({ navigation }) => {
                 console.warn("Clicked [Meet their comments]");
               }}
               title="Meet their comments"
-              color="#FEB557"
+              color="rgb(16, 86, 82)"
               style={{ marginLeft: "auto", marginRight: "auto" }}
             />
           </CardAction>
         </Card>
-        <Card>
-          <Text style={HomeStyles.winnersComments}>About This Application</Text>
+        <Card style={HomeStyles.AboutCard}>
+          <Text style={HomeStyles.AboutThisApplication}>
+            About This Application
+          </Text>
+          <Text style={HomeStyles.AboutText}>
+            Have a look around about our great features!
+          </Text>
 
           <CardAction separator={true} inColumn={false}>
             <CardButton
