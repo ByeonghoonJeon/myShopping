@@ -1,18 +1,22 @@
 import React from "react";
-import { Text, ScrollView } from "react-native";
+import { Text, ScrollView, ImageBackground } from "react-native";
 import { Card, Button } from "react-native-elements";
 import Footer from "../Footer/FooterComponent";
 
 import * as Animatable from "react-native-animatable";
-import LoginComponent from "../Login/LoginComponent";
+import LearnMoreStyles from "./LearnMoreStyles";
 
 const LearnMoreComponent = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#2B2B2B" }}>
+      <ImageBackground
+        source={require("../../assets/LearnMore.jpg")}
+        style={LearnMoreStyles.image}
+      />
       <Animatable.View animation="fadeInRightBig" duration={1000}>
         <Card
           containerStyle={{
-            backgroundColor: "#0F0F0F",
+            backgroundColor: "rgba(25, 26, 25, 0.75)",
             borderColor: "#232323",
             shadowColor: "black",
             marginTop: 80,
