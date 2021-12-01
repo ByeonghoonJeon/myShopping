@@ -17,7 +17,7 @@ const ForgotPasswordComponent = ({ navigation }) => {
   return (
     <View style={ForgotPasswordStyles.container}>
       <ImageBackground
-        source={require("../../assets/main3.jpg")}
+        source={require("../../assets/Forgot.jpg")}
         style={ForgotPasswordStyles.image}
       />
       <StatusBar style="auto" />

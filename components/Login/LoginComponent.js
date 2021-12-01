@@ -17,7 +17,7 @@ const LoginComponent = ({ navigation }) => {
   return (
     <View style={LoginStyles.container}>
       <ImageBackground
-        source={require("../../assets/main3.jpg")}
+        source={require("../../assets/Login.jpg")}
         style={LoginStyles.image}
       />
       <StatusBar style="auto" />

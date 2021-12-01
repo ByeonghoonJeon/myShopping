@@ -9,7 +9,7 @@ const MainComponent = ({ navigation }) => {
   return (
     <View style={MainStyles.mainContainer}>
       <ImageBackground
-        source={require("../../assets/main1.jpg")}
+        source={require("../../assets/main.jpg")}
         style={MainStyles.image}
       />
       <Header />
