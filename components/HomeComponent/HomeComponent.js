@@ -26,7 +26,7 @@ const HomeComponent = ({ navigation }) => {
       />
       <View style={HomeStyles.container}>
         <Text style={HomeStyles.greeting}>
-          Welcome "USER NAME", {" \n"}How do you feel today?
+          Welcome "USER NAME", {" \n"}Feeling Lucky isn't it?
         </Text>
 
         <Card>
