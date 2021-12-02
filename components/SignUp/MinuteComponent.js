@@ -9,19 +9,13 @@ const MinuteComponent = ({ navigation }) => {
         selectedValue={selectedValue}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="00" value="00" />
-        <Picker.Item label="01" value="01" />
-        <Picker.Item label="02" value="02" />
-        <Picker.Item label="03" value="03" />
-        <Picker.Item label="04" value="04" />
-        <Picker.Item label="05" value="05" />
-        <Picker.Item label="06" value="06" />
-        <Picker.Item label="07" value="07" />
-        <Picker.Item label="08" value="08" />
-        <Picker.Item label="09" value="09" />
-        <Picker.Item label="10" value="10" />
-        <Picker.Item label="11" value="11" />
-        <Picker.Item label="" value="" />
+        <Picker.Item label="MIN." value="null" />
+        <Picker.Item label="BETWEEN 00 ~ 09" value="01" />
+        <Picker.Item label="BETWEEN 10 ~ 19" value="02" />
+        <Picker.Item label="BETWEEN 20 ~ 29" value="03" />
+        <Picker.Item label="BETWEEN 30 ~ 39" value="04" />
+        <Picker.Item label="BETWEEN 40 ~ 49" value="05" />
+        <Picker.Item label="BETWEEN 50 ~ 59" value="06" />
       </Picker>
     </View>
   );

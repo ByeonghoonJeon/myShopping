@@ -110,9 +110,12 @@ const SignUpComponent = ({ navigation }) => {
           <MinuteComponent />
         </View>
         <Text style={SignUpStyles.PersonalInfoUseText}>
-          {"  "}By checking the box below I, hereby, agree to provide my
-          personal information above to the service provider for providing the
-          service and all kind of marketing.
+          {"  "}By checking the box below, you are agreeing to provide your
+          personal information above which is necessary to provide the service
+          to you. Also you are agreeing with following below. {"\n "}1. The
+          information you are providing can be utilized and stored for the
+          marketing purposes and analyses. {"\n "} 2. The information you are
+          providing can be provided to the 3rd party.
         </Text>
         <View style={SignUpStyles.pickerContainer}>
           <CheckBox
