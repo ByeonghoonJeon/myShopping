@@ -17,11 +17,13 @@ import DatesComponent from "./DatesComponent";
 import TimeComponent from "./TimeComponent";
 import MinuteComponent from "./MinuteComponent";
 import SolarLunarComponent from "./SolarLunarPickerComponent";
+import CheckBox from "@react-native-community/checkbox";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedValue, setSelectedValue] = useState("female");
+  const [toggleCheckBox, setToggleCheckBox] = useState(false);
 
   return (
     <ScrollView style={SignUpStyles.scrollContainer}>
@@ -120,6 +122,11 @@ const SignUpComponent = ({ navigation }) => {
             Start your own experience here
           </Text>
         </View>
+        <CheckBox
+          disabled={false}
+          value={toggleCheckBox}
+          onValueChange={(newValue) => setToggleCheckBox(newValue)}
+        />
       </View>
     </ScrollView>
   );
