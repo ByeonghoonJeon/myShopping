@@ -14,6 +14,9 @@ import SignUpStyles from "./SignUpStyles";
 import YearsComponent from "./YearsComponent";
 import MonthsComponent from "./MonthsComponent";
 import DatesComponent from "./DatesComponent";
+import TimeComponent from "./TimeComponent";
+import MinuteComponent from "./MinuteComponent";
+import SolarLunarComponent from "./SolarLunarPickerComponent";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -93,32 +96,30 @@ const SignUpComponent = ({ navigation }) => {
           </View>
           <View style={{ flex: 1, height: 1, backgroundColor: "white" }} />
         </View>
-        <View style={SignUpStyles.GenderPicker}>
-          <Picker
-            selectedValue={selectedValue}
-            onValueChange={(itemValue, itemIndex) =>
-              setSelectedValue(itemValue)
-            }
-          >
-            <Picker.Item label="Solar" value="solar" />
-            <Picker.Item label="Lunar" value="lunar" />
-          </Picker>
-        </View>
+
         <View style={SignUpStyles.pickerContainer}>
           <YearsComponent />
           <MonthsComponent />
           <DatesComponent />
         </View>
-
-        <TouchableOpacity
-          style={SignUpStyles.loginBtn}
-          onPress={() => navigation.navigate("Login")}
-        >
-          <Text style={SignUpStyles.loginText}>
-            <Icon name="sign-in" size={20} color="#fff" /> Sign Up
+        <View style={SignUpStyles.pickerContainer}>
+          <SolarLunarComponent />
+          <TimeComponent />
+          <MinuteComponent />
+        </View>
+        <View style={{ alignItems: "center" }}>
+          <TouchableOpacity
+            style={SignUpStyles.loginBtn}
+            onPress={() => navigation.navigate("Login")}
+          >
+            <Text style={SignUpStyles.loginText}>
+              <Icon name="sign-in" size={20} color="#fff" /> Sign Up
+            </Text>
+          </TouchableOpacity>
+          <Text style={SignUpStyles.footer}>
+            Start your own experience here
           </Text>
-        </TouchableOpacity>
-        <Text style={SignUpStyles.footer}>Start your own experience here</Text>
+        </View>
       </View>
     </ScrollView>
   );

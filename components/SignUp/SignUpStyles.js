@@ -42,9 +42,20 @@ const SignUpStyles = StyleSheet.create({
     justifyContent: "center",
     paddingLeft: 20,
   },
+  SolarLunarPicker: {
+    height: 50,
+    width: "33%",
+    marginTop: 20,
+    backgroundColor: "white",
+    borderRadius: 25,
+    color: "#fff",
+    alignSelf: "center",
+    justifyContent: "center",
+    paddingLeft: 10,
+  },
   YearPicker: {
     height: 50,
-    width: "30%",
+    width: "33%",
     marginTop: 20,
     backgroundColor: "white",
     borderRadius: 25,
@@ -55,7 +66,7 @@ const SignUpStyles = StyleSheet.create({
   },
   MonthPicker: {
     height: 50,
-    width: "30%",
+    width: "33%",
     marginTop: 20,
     backgroundColor: "white",
     borderRadius: 25,
@@ -68,7 +79,7 @@ const SignUpStyles = StyleSheet.create({
   },
   DatePicker: {
     height: 50,
-    width: "30%",
+    width: "33%",
     marginTop: 20,
     backgroundColor: "white",
     borderRadius: 25,
@@ -98,15 +109,6 @@ const SignUpStyles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     backgroundColor: "#8D2828",
-  },
-  singupBtn: {
-    width: "80%",
-    borderRadius: 25,
-    height: 50,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 10,
-    backgroundColor: "#BD1616",
   },
 
   loginText: {
@@ -147,6 +149,7 @@ const SignUpStyles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 22,
     marginTop: 30,
+    marginBottom: 50,
   },
 });
 
