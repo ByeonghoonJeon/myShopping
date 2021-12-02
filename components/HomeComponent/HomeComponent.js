@@ -26,7 +26,10 @@ const HomeComponent = ({ navigation }) => {
       />
       <View style={HomeStyles.container}>
         <Text style={HomeStyles.greeting}>
-          Welcome "USER NAME", {" \n"}Feeling Lucky isn't it?
+          Welcome "USER NAME", Feeling Lucky isn't it?
+        </Text>
+        <Text style={HomeStyles.greeting}>
+          [Gender], yyyy-mm-dd 10:30 birth
         </Text>
 
         <Card style={HomeStyles.MyPointCard}>

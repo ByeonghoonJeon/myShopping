@@ -9,6 +9,7 @@ import LoginComponent from "./components/Login/LoginComponent";
 import SignUpComponent from "./components/SignUp/SignUpComponent";
 import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordComponent";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
+import MyPageComponent from "./components/MyPageComponent/MyPageComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -75,6 +76,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "Forgot Password",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="MyPage"
+          component={MyPageComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "My Page",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
