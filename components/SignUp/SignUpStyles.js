@@ -144,6 +144,18 @@ const SignUpStyles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "flex-start",
   },
+  checkBoxText: {
+    color: "white",
+    marginTop: 20,
+    marginLeft: 5,
+    fontWeight: "bold",
+    fontSize: 15,
+  },
+  PersonalInfoUseText: {
+    color: "white",
+    marginTop: 20,
+    marginLeft: 5,
+  },
   footer: {
     color: "#fff",
     fontWeight: "bold",

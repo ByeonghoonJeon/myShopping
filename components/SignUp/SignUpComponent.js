@@ -17,7 +17,7 @@ import DatesComponent from "./DatesComponent";
 import TimeComponent from "./TimeComponent";
 import MinuteComponent from "./MinuteComponent";
 import SolarLunarComponent from "./SolarLunarPickerComponent";
-import CheckBox from "@react-native-community/checkbox";
+import CheckBox from "expo-checkbox";
 
 const SignUpComponent = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -73,7 +73,7 @@ const SignUpComponent = ({ navigation }) => {
             alignItems: "center",
             marginLeft: 20,
             marginRight: 20,
-            marginTop: 10,
+            marginTop: 20,
             backgroundColor: "black",
           }}
         >
@@ -109,6 +109,20 @@ const SignUpComponent = ({ navigation }) => {
           <TimeComponent />
           <MinuteComponent />
         </View>
+        <Text style={SignUpStyles.PersonalInfoUseText}>
+          {"  "}By checking the box below I, hereby, agree to provide my
+          personal information above to the service provider for providing the
+          service and all kind of marketing.
+        </Text>
+        <View style={SignUpStyles.pickerContainer}>
+          <CheckBox
+            disabled={false}
+            value={toggleCheckBox}
+            onValueChange={(newValue) => setToggleCheckBox(newValue)}
+            style={{ marginTop: 20 }}
+          />
+          <Text style={SignUpStyles.checkBoxText}>Yes, I agree.</Text>
+        </View>
         <View style={{ alignItems: "center" }}>
           <TouchableOpacity
             style={SignUpStyles.loginBtn}
@@ -122,11 +136,6 @@ const SignUpComponent = ({ navigation }) => {
             Start your own experience here
           </Text>
         </View>
-        <CheckBox
-          disabled={false}
-          value={toggleCheckBox}
-          onValueChange={(newValue) => setToggleCheckBox(newValue)}
-        />
       </View>
     </ScrollView>
   );
