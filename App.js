@@ -10,7 +10,7 @@ import SignUpComponent from "./components/SignUp/SignUpComponent";
 import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordComponent";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MyPageComponent from "./components/MyPageComponent/MyPageComponent";
-import StyledTab from "./components/TabComponent.js/TabComponents";
+import ShopComponent from "./components/ShopComponent/ShopComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -87,6 +87,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "My Page",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="Shop"
+          component={ShopComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Shop",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />

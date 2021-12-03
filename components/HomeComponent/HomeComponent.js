@@ -6,17 +6,10 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import {
-  Card,
-  CardTitle,
-  CardContent,
-  CardAction,
-  CardButton,
-  CardImage,
-} from "react-native-cards";
+import { Card, CardAction, CardButton } from "react-native-cards";
 import HomeStyles from "./HomeComponentStyles";
 import Footer from "../Footer/FooterComponent";
-import StyledTab from "../TabComponent.js/TabComponents";
+
 import Icon from "react-native-vector-icons/FontAwesome";
 import Icon2 from "react-native-vector-icons/FontAwesome5";
 
@@ -186,7 +179,7 @@ const HomeComponent = ({ navigation }) => {
 
         <TouchableOpacity
           style={HomeStyles.tabButton}
-          onPress={() => navigation.navigate("SignUp")}
+          onPress={() => navigation.navigate("Shop")}
         >
           <Text style={HomeStyles.tabIcon}>
             <Icon2
