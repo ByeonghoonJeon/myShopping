@@ -18,6 +18,7 @@ import HomeStyles from "./HomeComponentStyles";
 import Footer from "../Footer/FooterComponent";
 import StyledTab from "../TabComponent.js/TabComponents";
 import Icon from "react-native-vector-icons/FontAwesome";
+import Icon2 from "react-native-vector-icons/FontAwesome5";
 
 const HomeComponent = ({ navigation }) => {
   return (
@@ -140,13 +141,62 @@ const HomeComponent = ({ navigation }) => {
       <Footer />
       <View style={HomeStyles.tabContainer}>
         <TouchableOpacity
+          style={HomeStyles.tabSelectedButton}
+          onPress={() => navigation.navigate("Home")}
+        >
+          <Text style={HomeStyles.tabIcon}>
+            <Icon
+              name="home"
+              size={20}
+              color="#8D2828"
+              style={HomeStyles.tabIcon}
+            />
+          </Text>
+
+          <Text style={HomeStyles.tabText}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           style={HomeStyles.tabButton}
           onPress={() => navigation.navigate("SignUp")}
         >
-          <Text style={HomeStyles.SignUpText}>
-            <Icon name="user-plus" size={20} color="#fff" /> Or Sign Up for Free
-            Trial
+          <Text style={HomeStyles.tabIcon}>
+            <Icon2
+              name="coins"
+              size={20}
+              color="#8D2828"
+              style={HomeStyles.tabIcon}
+            />
           </Text>
+          <Text style={HomeStyles.tabText}>Event</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={HomeStyles.tabButton}
+          onPress={() => navigation.navigate("SignUp")}
+        >
+          <Text style={HomeStyles.tabIcon}>
+            <Icon2
+              name="portrait"
+              size={20}
+              color="#8D2828"
+              style={HomeStyles.tabIcon}
+            />
+          </Text>
+          <Text style={HomeStyles.tabText}>Profile</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={HomeStyles.tabButton}
+          onPress={() => navigation.navigate("SignUp")}
+        >
+          <Text style={HomeStyles.tabIcon}>
+            <Icon2
+              name="shopping-cart"
+              size={20}
+              color="#8D2828"
+              style={HomeStyles.tabIcon}
+            />
+          </Text>
+          <Text style={HomeStyles.tabText}>Shop</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
