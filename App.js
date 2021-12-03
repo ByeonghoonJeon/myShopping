@@ -10,6 +10,7 @@ import SignUpComponent from "./components/SignUp/SignUpComponent";
 import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordComponent";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MyPageComponent from "./components/MyPageComponent/MyPageComponent";
+import StyledTab from "./components/TabComponent.js/TabComponents";
 
 const Stack = createNativeStackNavigator();
 

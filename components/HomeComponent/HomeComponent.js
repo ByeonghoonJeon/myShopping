@@ -16,7 +16,8 @@ import {
 } from "react-native-cards";
 import HomeStyles from "./HomeComponentStyles";
 import Footer from "../Footer/FooterComponent";
-import MyTabs from "../BottomTabComponent/BottomTabComponent";
+import StyledTab from "../TabComponent.js/TabComponents";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const HomeComponent = ({ navigation }) => {
   return (
@@ -137,7 +138,17 @@ const HomeComponent = ({ navigation }) => {
         </Card>
       </View>
       <Footer />
-      <MyTabs />
+      <View style={HomeStyles.tabContainer}>
+        <TouchableOpacity
+          style={HomeStyles.tabButton}
+          onPress={() => navigation.navigate("SignUp")}
+        >
+          <Text style={HomeStyles.SignUpText}>
+            <Icon name="user-plus" size={20} color="#fff" /> Or Sign Up for Free
+            Trial
+          </Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };

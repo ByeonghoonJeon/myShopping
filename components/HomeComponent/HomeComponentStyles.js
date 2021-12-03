@@ -130,6 +130,22 @@ const HomeStyles = StyleSheet.create({
     marginBottom: 0,
     paddingBottom: 0,
   },
+  tabContainer: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "#8D2828",
+    padding: 10,
+    flexDirection: "row",
+    display: "flex",
+  },
+  tabButton: {
+    height: 40,
+    justifyContent: "center",
+    alignItems: "center",
+    width: "30%",
+    backgroundColor: "white",
+    margin: 5,
+  },
 });
 
 export default HomeStyles;
