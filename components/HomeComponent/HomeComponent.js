@@ -16,6 +16,7 @@ import {
 } from "react-native-cards";
 import HomeStyles from "./HomeComponentStyles";
 import Footer from "../Footer/FooterComponent";
+import MyTabs from "../BottomTabComponent/BottomTabComponent";
 
 const HomeComponent = ({ navigation }) => {
   return (
@@ -136,6 +137,7 @@ const HomeComponent = ({ navigation }) => {
         </Card>
       </View>
       <Footer />
+      <MyTabs />
     </ScrollView>
   );
 };
