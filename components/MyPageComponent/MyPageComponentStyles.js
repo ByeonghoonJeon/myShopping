@@ -20,21 +20,29 @@ const MyPageComponentStyles = StyleSheet.create({
   winnerCommentCard: {
     backgroundColor: "rgba(251, 243, 228, 0.85)",
   },
-  winnersCommentsText: {
-    color: "rgb(16, 86, 82)",
-    fontWeight: "bold",
-    marginRight: "auto",
-    marginLeft: "auto",
-    textAlign: "center",
-    marginTop: 10,
-    marginBottom: 20,
-  },
-  winnersComments: {
-    marginTop: 20,
+
+  title: {
     marginRight: "auto",
     marginLeft: "auto",
     fontSize: 30,
     fontWeight: "bold",
+    marginTop: 15,
+    marginBottom: 15,
+  },
+  subtitle: {
+    color: "rgb(16, 86, 82)",
+    fontWeight: "bold",
+    marginLeft: 20,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+
+  text: {
+    color: "black",
+    marginLeft: "auto",
+    marginRight: 20,
+    marginTop: 10,
+    marginBottom: 10,
   },
   tabContainer: {
     width: "100%",

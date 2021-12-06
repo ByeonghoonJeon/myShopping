@@ -24,16 +24,18 @@ const MyPageComponent = ({ navigation }) => {
     <ScrollView style={MyPageComponentStyles.scrollContainer}>
       <View style={MyPageComponentStyles.CardContainer}>
         <Card style={MyPageComponentStyles.winnerCommentCard}>
-          <Text style={MyPageComponentStyles.winnersComments}>MY PROFILE</Text>
+          <Text style={MyPageComponentStyles.title}>MY PROFILE</Text>
           <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.winnersCommentsText}>
-              GENDER
-            </Text>
+            <Text style={MyPageComponentStyles.subtitle}>GENDER</Text>
+            <Text style={MyPageComponentStyles.text}>Male</Text>
           </CardAction>
           <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.winnersCommentsText}>
-              BIRTH DATE
-            </Text>
+            <Text style={MyPageComponentStyles.subtitle}>BIRTH DATE</Text>
+            <Text style={MyPageComponentStyles.text}>Mar 12, 1992 Sol</Text>
+          </CardAction>
+          <CardAction separator={true} inColumn={false}>
+            <Text style={MyPageComponentStyles.subtitle}>BIRTH TIME</Text>
+            <Text style={MyPageComponentStyles.text}>15:06</Text>
           </CardAction>
 
           <CardAction separator={true} inColumn={false}>
