@@ -79,7 +79,7 @@ const ShopComponent = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={ShopComponentStyles.tabButton}
-          onPress={() => navigation.navigate("SignUp")}
+          onPress={() => navigation.navigate("MyPage")}
         >
           <Text style={ShopComponentStyles.tabIcon}>
             <Icon2

@@ -164,7 +164,7 @@ const HomeComponent = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={HomeStyles.tabButton}
-          onPress={() => navigation.navigate("SignUp")}
+          onPress={() => navigation.navigate("MyPage")}
         >
           <Text style={HomeStyles.tabIcon}>
             <Icon2
