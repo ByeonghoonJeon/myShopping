@@ -17,33 +17,33 @@ const ShopComponent = ({ navigation }) => {
         />
         <PricingCard
           color="#4f9deb"
-          title="BEST of BEST DEAL"
-          price="$99"
+          title="LUCKY DEAL 70% OFF"
+          price="$60"
           info={[
-            "50 sets of free lucky numbers X 4 weeks",
+            "50 sets of lucky numbers X 4 weeks",
             "Day to Buy Lottery X 4 weeks",
           ]}
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
         />
         <PricingCard
           color="#4f9deb"
-          title="BEST DEAL"
-          price="$37"
-          info={["50 sets of free lucky numbers", "Day to Buy Lottery"]}
+          title="BEST DEAL 20% OFF"
+          price="$40"
+          info={["50 sets of lucky numbers", "Day to Buy Lottery"]}
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
         />
         <PricingCard
           color="#4f9deb"
-          title="HOT DEAL"
-          price="$20"
-          info={["20 sets of free lucky numbers", "Day to Buy Lottery"]}
+          title="HOT DEAL 10% OFF"
+          price="$19"
+          info={["20 sets of lucky numbers", "Day to Buy Lottery"]}
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
         />
         <PricingCard
           color="#4f9deb"
           title="STARTER"
           price="$10"
-          info={["10 sets of free lucky numbers"]}
+          info={["10 sets of lucky numbers"]}
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
         />
       </View>
