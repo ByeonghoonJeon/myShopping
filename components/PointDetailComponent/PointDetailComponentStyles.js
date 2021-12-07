@@ -45,6 +45,22 @@ const PointDetailComponentStyles = StyleSheet.create({
     marginBottom: 10,
     textAlign: "right",
   },
+  currentPoint: {
+    marginLeft: "auto",
+    marginRight: 40,
+    marginBottom: 20,
+    marginTop: 20,
+    fontSize: 33,
+    color: "white",
+    fontWeight: "bold",
+  },
+  currentPointText: {
+    color: "black",
+    fontWeight: "bold",
+    marginLeft: 40,
+    marginTop: 10,
+    marginBottom: 10,
+  },
   point: {
     marginLeft: "auto",
     marginRight: 20,

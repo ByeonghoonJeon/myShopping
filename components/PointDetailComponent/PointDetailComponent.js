@@ -20,6 +20,12 @@ const PointDetailComponent = ({ navigation }) => {
           <Card style={PointDetailComponentStyles.pointDetailCard}>
             <Text style={PointDetailComponentStyles.title}>Point Details</Text>
             <CardAction separator={true} inColumn={false}>
+              <Text style={PointDetailComponentStyles.currentPointText}>
+                Current Point
+              </Text>
+              <Text style={PointDetailComponentStyles.currentPoint}>3,200</Text>
+            </CardAction>
+            <CardAction separator={true} inColumn={false}>
               <Text style={PointDetailComponentStyles.textDate}>Date</Text>
               <Text style={PointDetailComponentStyles.textPoint}>Point</Text>
             </CardAction>
