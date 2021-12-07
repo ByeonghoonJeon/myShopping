@@ -19,7 +19,7 @@ const LearnMoreComponent = ({ navigation }) => {
             backgroundColor: "rgba(25, 26, 25, 0.75)",
             borderColor: "#232323",
             shadowColor: "black",
-            marginTop: 100,
+            marginTop: 70,
           }}
         >
           <Card.FeaturedTitle style={{ textAlign: "center", color: "#FFC107" }}>

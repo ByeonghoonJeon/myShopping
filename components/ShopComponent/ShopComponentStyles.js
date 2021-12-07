@@ -5,7 +5,7 @@ const ShopComponentStyles = StyleSheet.create({
   },
 
   cardView: {
-    marginTop: 100,
+    marginTop: 70,
   },
   tabContainer: {
     width: "100%",
