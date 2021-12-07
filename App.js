@@ -11,6 +11,8 @@ import ForgotPasswordComponent from "./components/ForgotPassword/ForgotPasswordC
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MyPageComponent from "./components/MyPageComponent/MyPageComponent";
 import ShopComponent from "./components/ShopComponent/ShopComponent";
+import ProfileAdjustComponent from "./components/ProfileAdjustComponent/ProfileAdjustComponent";
+import PointDetailComponent from "./components/PointDetailComponent/PointDetailComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -97,6 +99,26 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "Shop",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="Profile Adjust"
+          component={ProfileAdjustComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Adjust",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="PointDetails"
+          component={PointDetailComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Point Details",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />

@@ -1,19 +1,6 @@
 import React from "react";
-import {
-  Text,
-  View,
-  ScrollView,
-  ImageBackground,
-  TouchableOpacity,
-} from "react-native";
-import {
-  Card,
-  CardTitle,
-  CardContent,
-  CardAction,
-  CardButton,
-  CardImage,
-} from "react-native-cards";
+import { Text, View, ScrollView, TouchableOpacity } from "react-native";
+import { Card, CardAction, CardButton } from "react-native-cards";
 import Footer from "../Footer/FooterComponent";
 import MyPageComponentStyles from "./MyPageComponentStyles";
 
@@ -70,7 +57,7 @@ const MyPageComponent = ({ navigation }) => {
           </CardAction>
           <CardAction separator={true} inColumn={false}>
             <CardButton
-              onPress={() => navigation.navigate("Main")}
+              onPress={() => navigation.navigate("Profile Adjust")}
               title="ADJUST"
               color="rgb(16, 86, 82)"
               style={{ marginLeft: "auto", marginRight: "auto" }}
@@ -83,7 +70,7 @@ const MyPageComponent = ({ navigation }) => {
           <Text style={MyPageComponentStyles.title}>MY POINTS</Text>
           <CardAction separator={true} inColumn={false}>
             <TouchableOpacity
-              onPress={() => console.warn("Clicked [View Details]")}
+              onPress={() => navigation.navigate("PointDetails")}
             >
               <Text style={MyPageComponentStyles.pointDetail}>
                 VIEW DETAILS

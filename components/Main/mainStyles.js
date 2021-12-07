@@ -1,5 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
-const styles = StyleSheet.create({
+const MainStyles = StyleSheet.create({
   mainContainer: {
     width: "100%",
     height: Dimensions.get("window").height,
@@ -38,4 +38,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+export default MainStyles;

@@ -27,7 +27,24 @@ const HomeComponent = ({ navigation }) => {
         <Text style={HomeStyles.greeting}>
           [Gender], yyyy-mm-dd 10:30 birth
         </Text>
+        <Card style={HomeStyles.GetYourNumberCard}>
+          <Text style={HomeStyles.GetYourNumberCardText}>
+            Get your lucky numbers!{"\n"}Your Special Number for This Week
+            Includes{" "}
+          </Text>
+          <Text style={HomeStyles.myNumber}>33</Text>
 
+          <CardAction separator={true} inColumn={false}>
+            <CardButton
+              onPress={() => {
+                console.warn("Clicked [See my full numbers]");
+              }}
+              title="See my full numbers."
+              color="white"
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+            />
+          </CardAction>
+        </Card>
         <Card style={HomeStyles.MyPointCard}>
           <Text style={HomeStyles.cardSubtitle}>My Point </Text>
           <Text style={HomeStyles.point}>3,200 P</Text>
@@ -78,24 +95,7 @@ const HomeComponent = ({ navigation }) => {
             />
           </CardAction>
         </Card>
-        <Card style={HomeStyles.GetYourNumberCard}>
-          <Text style={HomeStyles.GetYourNumberCardText}>
-            Get your lucky numbers!{"\n"}Your Special Number for This Week
-            Includes{" "}
-          </Text>
-          <Text style={HomeStyles.myNumber}>33</Text>
 
-          <CardAction separator={true} inColumn={false}>
-            <CardButton
-              onPress={() => {
-                console.warn("Clicked [See my full numbers]");
-              }}
-              title="See my full numbers."
-              color="white"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
-            />
-          </CardAction>
-        </Card>
         <Card style={HomeStyles.winnerCommentCard}>
           <Text style={HomeStyles.winnersComments}>Winner's comments</Text>
           <Text style={HomeStyles.winnersCommentsText}>
