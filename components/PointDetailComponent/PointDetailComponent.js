@@ -125,76 +125,68 @@ const PointDetailComponent = ({ navigation }) => {
               </Text>
               <Text style={PointDetailComponentStyles.textPoint}>1,000</Text>
             </CardAction>
-            <CardAction separator={true} inColumn={false}>
-              <CardButton
-                onPress={() => navigation.navigate("Shop")}
-                title="RENEW YOUR SUBSCRIPTION"
-                color="rgb(16, 86, 82)"
-                style={{ marginLeft: "auto", marginRight: "auto" }}
-              />
-            </CardAction>
           </Card>
         </View>
-        <View style={PointDetailComponentStyles.tabContainer}>
-          <TouchableOpacity
-            style={PointDetailComponentStyles.tabButton}
-            onPress={() => navigation.navigate("Home")}
-          >
-            <Text style={PointDetailComponentStyles.tabIcon}>
-              <Icon
-                name="home"
-                size={20}
-                color="#8D2828"
-                style={PointDetailComponentStyles.tabIcon}
-              />
-            </Text>
+      </View>
+      <View style={PointDetailComponentStyles.tabContainer}>
+        <TouchableOpacity
+          style={PointDetailComponentStyles.tabButton}
+          onPress={() => navigation.navigate("Home")}
+        >
+          <Text style={PointDetailComponentStyles.tabIcon}>
+            <Icon
+              name="home"
+              size={20}
+              color="#8D2828"
+              style={PointDetailComponentStyles.tabIcon}
+            />
+          </Text>
 
-            <Text style={PointDetailComponentStyles.tabText}>Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={PointDetailComponentStyles.tabButton}
-            onPress={() => navigation.navigate("SignUp")}
-          >
-            <Text style={PointDetailComponentStyles.tabIcon}>
-              <Icon2
-                name="coins"
-                size={20}
-                color="#8D2828"
-                style={PointDetailComponentStyles.tabIcon}
-              />
-            </Text>
-            <Text style={PointDetailComponentStyles.tabText}>Event</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={PointDetailComponentStyles.tabSelectedButton}
-            onPress={() => navigation.navigate("MyPage")}
-          >
-            <Text style={PointDetailComponentStyles.tabIcon}>
-              <Icon2
-                name="portrait"
-                size={20}
-                color="#8D2828"
-                style={PointDetailComponentStyles.tabIcon}
-              />
-            </Text>
-            <Text style={PointDetailComponentStyles.tabText}>Profile</Text>
-          </TouchableOpacity>
+          <Text style={PointDetailComponentStyles.tabText}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={PointDetailComponentStyles.tabButton}
+          onPress={() => navigation.navigate("SignUp")}
+        >
+          <Text style={PointDetailComponentStyles.tabIcon}>
+            <Icon2
+              name="coins"
+              size={20}
+              color="#8D2828"
+              style={PointDetailComponentStyles.tabIcon}
+            />
+          </Text>
+          <Text style={PointDetailComponentStyles.tabText}>Event</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={PointDetailComponentStyles.tabButton}
+          onPress={() => navigation.navigate("MyPage")}
+        >
+          <Text style={PointDetailComponentStyles.tabIcon}>
+            <Icon2
+              name="portrait"
+              size={20}
+              color="#8D2828"
+              style={PointDetailComponentStyles.tabIcon}
+            />
+          </Text>
+          <Text style={PointDetailComponentStyles.tabText}>Profile</Text>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            style={PointDetailComponentStyles.tabButton}
-            onPress={() => navigation.navigate("Shop")}
-          >
-            <Text style={PointDetailComponentStyles.tabIcon}>
-              <Icon2
-                name="shopping-cart"
-                size={20}
-                color="#8D2828"
-                style={PointDetailComponentStyles.tabIcon}
-              />
-            </Text>
-            <Text style={PointDetailComponentStyles.tabText}>Shop</Text>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity
+          style={PointDetailComponentStyles.tabButton}
+          onPress={() => navigation.navigate("Shop")}
+        >
+          <Text style={PointDetailComponentStyles.tabIcon}>
+            <Icon2
+              name="shopping-cart"
+              size={20}
+              color="#8D2828"
+              style={PointDetailComponentStyles.tabIcon}
+            />
+          </Text>
+          <Text style={PointDetailComponentStyles.tabText}>Shop</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );

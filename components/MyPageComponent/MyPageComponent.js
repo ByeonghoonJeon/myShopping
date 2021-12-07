@@ -80,7 +80,6 @@ const MyPageComponent = ({ navigation }) => {
           </CardAction>
         </Card>
       </View>
-      <Footer />
       <View style={MyPageComponentStyles.tabContainer}>
         <TouchableOpacity
           style={MyPageComponentStyles.tabButton}

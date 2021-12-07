@@ -2,16 +2,16 @@ import { StyleSheet } from "react-native";
 const PointDetailComponentStyles = StyleSheet.create({
   scrollContainer: {
     backgroundColor: "#2B2B2B",
-    paddingTop: 90,
-    paddingBottom: 20,
   },
 
   CardContainer: {
+    marginTop: 90,
     width: "90%",
     alignSelf: "center",
   },
   pointDetailCard: {
     backgroundColor: "rgba(251, 243, 228, 0.85)",
+    marginBottom: 20,
   },
 
   title: {
