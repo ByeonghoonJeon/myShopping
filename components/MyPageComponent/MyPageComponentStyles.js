@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 const MyPageComponentStyles = StyleSheet.create({
   scrollContainer: {
     backgroundColor: "#2B2B2B",
-    marginTop: 70,
+    marginTop: 50,
   },
   image: {
     width: "100%",

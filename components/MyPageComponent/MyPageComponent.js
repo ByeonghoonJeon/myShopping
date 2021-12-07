@@ -32,6 +32,20 @@ const MyPageComponent = ({ navigation }) => {
             <Text style={MyPageComponentStyles.subscriptionStatus}>
               YOU ARE SUBSCRIBING -PREMIUM-
             </Text>
+            <CardAction separator={true} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>
+                SUBSCRIPTION VALID UNTIL
+              </Text>
+              <Text style={MyPageComponentStyles.text}>31st Dec, 2021</Text>
+            </CardAction>
+          </CardAction>
+          <CardAction separator={true} inColumn={false}>
+            <CardButton
+              onPress={() => navigation.navigate("Shop")}
+              title="RENEW YOUR SUBSCRIPTION"
+              color="rgb(16, 86, 82)"
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+            />
           </CardAction>
         </Card>
       </View>
@@ -56,10 +70,8 @@ const MyPageComponent = ({ navigation }) => {
           </CardAction>
           <CardAction separator={true} inColumn={false}>
             <CardButton
-              onPress={() => {
-                console.warn("Clicked [Meet their comments]");
-              }}
-              title="Meet their comments"
+              onPress={() => navigation.navigate("Main")}
+              title="ADJUST"
               color="rgb(16, 86, 82)"
               style={{ marginLeft: "auto", marginRight: "auto" }}
             />
@@ -70,7 +82,13 @@ const MyPageComponent = ({ navigation }) => {
         <Card style={MyPageComponentStyles.winnerCommentCard}>
           <Text style={MyPageComponentStyles.title}>MY POINTS</Text>
           <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.pointDetail}>VIEW DETAILS</Text>
+            <TouchableOpacity
+              onPress={() => console.warn("Clicked [View Details]")}
+            >
+              <Text style={MyPageComponentStyles.pointDetail}>
+                VIEW DETAILS
+              </Text>
+            </TouchableOpacity>
             <Text style={MyPageComponentStyles.point}>3,200 P</Text>
           </CardAction>
         </Card>
