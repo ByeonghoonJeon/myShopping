@@ -36,7 +36,36 @@ const MyPageComponentStyles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
   },
-
+  subscriptionNotSubscribing: {
+    color: "red",
+    fontWeight: "bold",
+    marginLeft: 20,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  subscriptionStatus: {
+    color: "rgb(16, 86, 82)",
+    fontWeight: "bold",
+    marginLeft: 20,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  point: {
+    marginLeft: "auto",
+    marginRight: 20,
+    marginBottom: 20,
+    marginTop: 20,
+    fontSize: 33,
+    color: "white",
+    fontWeight: "bold",
+  },
+  pointDetail: {
+    color: "rgb(16, 86, 82)",
+    marginLeft: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    fontSize: 13,
+  },
   text: {
     color: "black",
     marginLeft: "auto",

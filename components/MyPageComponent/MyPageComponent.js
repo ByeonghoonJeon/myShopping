@@ -24,6 +24,19 @@ const MyPageComponent = ({ navigation }) => {
     <ScrollView style={MyPageComponentStyles.scrollContainer}>
       <View style={MyPageComponentStyles.CardContainer}>
         <Card style={MyPageComponentStyles.winnerCommentCard}>
+          <Text style={MyPageComponentStyles.title}>SUBSCRIPTION</Text>
+          <CardAction separator={true} inColumn={true}>
+            <Text style={MyPageComponentStyles.subscriptionNotSubscribing}>
+              YOU ARE NOT SUBSCRIBING OR
+            </Text>
+            <Text style={MyPageComponentStyles.subscriptionStatus}>
+              YOU ARE SUBSCRIBING -PREMIUM-
+            </Text>
+          </CardAction>
+        </Card>
+      </View>
+      <View style={MyPageComponentStyles.CardContainer}>
+        <Card style={MyPageComponentStyles.winnerCommentCard}>
           <Text style={MyPageComponentStyles.title}>MY PROFILE</Text>
           <CardAction separator={true} inColumn={false}>
             <Text style={MyPageComponentStyles.subtitle}>GENDER</Text>
@@ -37,7 +50,10 @@ const MyPageComponent = ({ navigation }) => {
             <Text style={MyPageComponentStyles.subtitle}>BIRTH TIME</Text>
             <Text style={MyPageComponentStyles.text}>15:06</Text>
           </CardAction>
-
+          <CardAction separator={true} inColumn={false}>
+            <Text style={MyPageComponentStyles.subtitle}>Age</Text>
+            <Text style={MyPageComponentStyles.text}>29</Text>
+          </CardAction>
           <CardAction separator={true} inColumn={false}>
             <CardButton
               onPress={() => {
@@ -47,6 +63,15 @@ const MyPageComponent = ({ navigation }) => {
               color="rgb(16, 86, 82)"
               style={{ marginLeft: "auto", marginRight: "auto" }}
             />
+          </CardAction>
+        </Card>
+      </View>
+      <View style={MyPageComponentStyles.CardContainer}>
+        <Card style={MyPageComponentStyles.winnerCommentCard}>
+          <Text style={MyPageComponentStyles.title}>MY POINTS</Text>
+          <CardAction separator={true} inColumn={false}>
+            <Text style={MyPageComponentStyles.pointDetail}>VIEW DETAILS</Text>
+            <Text style={MyPageComponentStyles.point}>3,200 P</Text>
           </CardAction>
         </Card>
       </View>
