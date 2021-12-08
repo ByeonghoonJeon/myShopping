@@ -57,9 +57,7 @@ const HomeComponent = ({ navigation }) => {
 
           <CardAction separator={true} inColumn={false}>
             <CardButton
-              onPress={() => {
-                console.warn("Clicked [Rewards]");
-              }}
+              onPress={() => navigation.navigate("RewardComponent")}
               title="Rewards"
               color="#FEB557"
               style={{ marginLeft: "auto" }}

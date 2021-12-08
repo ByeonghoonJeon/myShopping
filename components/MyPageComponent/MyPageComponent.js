@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View, ScrollView, TouchableOpacity } from "react-native";
 import { Card, CardAction, CardButton } from "react-native-cards";
-import Footer from "../Footer/FooterComponent";
 import MyPageComponentStyles from "./MyPageComponentStyles";
 
 import Icon from "react-native-vector-icons/FontAwesome";

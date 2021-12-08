@@ -14,6 +14,7 @@ import ShopComponent from "./components/ShopComponent/ShopComponent";
 import ProfileAdjustComponent from "./components/ProfileAdjustComponent/ProfileAdjustComponent";
 import PointDetailComponent from "./components/PointDetailComponent/PointDetailComponent";
 import AboutPointComponent from "./components/AboutPointComponent/AboutPointComponent";
+import RewardComponent from "./components/RewardComponent/RewardComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -130,6 +131,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "About Point",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="RewardComponent"
+          component={RewardComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Rewards",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />
