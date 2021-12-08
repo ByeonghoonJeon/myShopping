@@ -10,62 +10,23 @@ const RewardComponent = ({ navigation }) => {
       <View style={RewardComponentStyles.cardView}>
         <PricingCard
           color="#8D2828"
-          title="LUCKY DEAL 70% OFF"
-          price="$60"
+          title="4 WEEKS FREE"
+          price="500 P"
           info={[
             "50 sets of lucky numbers X 4 weeks",
             "Day to Buy Lottery X 4 weeks",
-            "1st Prize Possibility: 1/164,800",
-            "2nd Prize Possibility: 1/27,150",
-            "3rd Prize Possibility: 1/715",
           ]}
-          button={{ title: "TAKE YOUR CHANCE", icon: "flight-takeoff" }}
+          button={{ title: "CLAIM REWARD", icon: "flight-takeoff" }}
         />
         <PricingCard
           color="#34BE82"
-          title="BEST DEAL 20% OFF"
-          price="$40"
-          info={[
-            "50 sets of lucky numbers",
-            "Day to Buy Lottery",
-            "1st Prize Possibility: 1/164,800",
-            "2nd Prize Possibility: 1/27,150",
-            "3rd Prize Possibility: 1/715",
-          ]}
+          title="A WEEK FREE"
+          price="150 P"
+          info={["50 sets of lucky numbers", "Day to Buy Lottery"]}
           button={{
-            title: "GET STARTED",
+            title: "CLAIM REWARD",
             icon: "flight-takeoff",
           }}
-        />
-        <PricingCard
-          color="#34BE82"
-          title="HOT DEAL 10% OFF"
-          price="$19"
-          info={[
-            "20 sets of lucky numbers",
-            "Day to Buy Lottery",
-            "1st Prize Possibility: 1/412,000",
-            "2nd Prize Possibility: 1/67,875",
-          ]}
-          button={{ title: "GET STARTED", icon: "flight-takeoff" }}
-        />
-        <PricingCard
-          color="#34BE82"
-          title="STARTER"
-          price="$10"
-          info={[
-            "10 sets of lucky numbers",
-            "1st Prize Possibility: 1/824,000",
-            "2nd Prize Possibility: 1/135,750",
-          ]}
-          button={{ title: "GET STARTED", icon: "flight-takeoff" }}
-        />
-        <PricingCard
-          color="#DED9C4"
-          title="FREE"
-          price="$0"
-          info={["2 sets of free lucky numbers"]}
-          button={{ title: "GET STARTED" }}
         />
       </View>
       <View style={RewardComponentStyles.tabContainer}>
