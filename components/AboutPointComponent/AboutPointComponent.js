@@ -10,13 +10,13 @@ const AboutPointComponent = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#483434" }}>
       <ImageBackground
-        source={require("../../assets/LearnMore.jpg")}
+        source={require("../../assets/pointDetails.jpg")}
         style={AboutPointComponentStyles.image}
       />
       <Animatable.View animation="fadeInRightBig" duration={1000}>
         <Card
           containerStyle={{
-            backgroundColor: "rgba(25, 26, 25, 0.75)",
+            backgroundColor: "rgba(46, 76, 109, 0.90)",
             borderColor: "#232323",
             shadowColor: "black",
             marginTop: 70,
@@ -28,35 +28,24 @@ const AboutPointComponent = ({ navigation }) => {
           <Card.Divider />
           <Text
             style={{
-              marginBottom: 10,
-              color: "#FFC107",
-              fontWeight: "bold",
-            }}
-          >
-            You can earn points when a purchase is successfully done or
-            participating various event, such as survey or watching video.
-          </Text>
-          <Text
-            style={{
-              marginTop: 20,
               marginBottom: 20,
               color: "white",
               fontWeight: "bold",
             }}
           >
-            사주 분석으로 나한테 로또운이 들어오는 날짜에 로또를 구매해 보세요.
-            나만을 위해 주어지는 번호와 날짜로 당첨 확률을 50배 더 높이세요!
-            {"\n"}
-            {"\n"}
-            1등 확률 : 1/164,800 {"\n"}2등 확률 : 1/27,150{"\n"}3등 확률 : 1/714
+            Earn points via various ways!{"\n"}Claim special rewards with the
+            point you've earned!{"\n"}
+            {"\n"}Let me tell you how you can earn points.
           </Text>
           <Card.Divider />
           <Text
             style={{ marginBottom: 10, color: "#FFC107", fontWeight: "bold" }}
           >
-            1. 로또 사는 날짜, 언제가 좋을까요?
+            1. When a purchase is successfully done !
           </Text>
-          <Card.Image source={require("../../assets/date.jpg")}></Card.Image>
+          <Card.Image
+            source={require("../../assets/purchase.jpg")}
+          ></Card.Image>
           <Text
             style={{
               marginTop: 20,
