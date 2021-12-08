@@ -2,19 +2,17 @@ import { StyleSheet } from "react-native";
 const MyPageComponentStyles = StyleSheet.create({
   scrollContainer: {
     backgroundColor: "#2B2B2B",
-    marginTop: 50,
   },
-  image: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "cover",
-    position: "absolute",
+
+  Container: {
+    paddingTop: 70,
+    paddingBottom: 20,
   },
 
   CardContainer: {
     width: "90%",
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: 5,
+    paddingBottom: 5,
     alignSelf: "center",
   },
   winnerCommentCard: {

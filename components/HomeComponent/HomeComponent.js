@@ -9,6 +9,7 @@ import {
 import { Card, CardAction, CardButton } from "react-native-cards";
 import HomeStyles from "./HomeComponentStyles";
 import Footer from "../Footer/FooterComponent";
+import HistoryComponent from "../HistoryComponent/HistoryComponent";
 
 import Icon from "react-native-vector-icons/FontAwesome";
 import Icon2 from "react-native-vector-icons/FontAwesome5";

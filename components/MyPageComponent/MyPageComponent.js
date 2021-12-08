@@ -8,83 +8,85 @@ import Icon2 from "react-native-vector-icons/FontAwesome5";
 const MyPageComponent = ({ navigation }) => {
   return (
     <ScrollView style={MyPageComponentStyles.scrollContainer}>
-      <View style={MyPageComponentStyles.CardContainer}>
-        <Card style={MyPageComponentStyles.winnerCommentCard}>
-          <Text style={MyPageComponentStyles.title}>SUBSCRIPTION</Text>
-          <CardAction separator={true} inColumn={true}>
-            <Text style={MyPageComponentStyles.subscriptionNotSubscribing}>
-              YOU ARE NOT SUBSCRIBING OR
-            </Text>
-            <Text style={MyPageComponentStyles.subscriptionStatus}>
-              YOU ARE SUBSCRIBING -PREMIUM-
-            </Text>
-            <CardAction separator={true} inColumn={false}>
-              <Text style={MyPageComponentStyles.subtitle}>
-                SUBSCRIPTION VALID UNTIL
+      <View style={MyPageComponentStyles.Container}>
+        <View style={MyPageComponentStyles.CardContainer}>
+          <Card style={MyPageComponentStyles.winnerCommentCard}>
+            <Text style={MyPageComponentStyles.title}>SUBSCRIPTION</Text>
+            <CardAction separator={true} inColumn={true}>
+              <Text style={MyPageComponentStyles.subscriptionNotSubscribing}>
+                YOU ARE NOT SUBSCRIBING OR
               </Text>
-              <Text style={MyPageComponentStyles.text}>31st Dec, 2021</Text>
+              <Text style={MyPageComponentStyles.subscriptionStatus}>
+                YOU ARE SUBSCRIBING -PREMIUM-
+              </Text>
+              <CardAction separator={true} inColumn={false}>
+                <Text style={MyPageComponentStyles.subtitle}>
+                  SUBSCRIPTION VALID UNTIL
+                </Text>
+                <Text style={MyPageComponentStyles.text}>31st Dec, 2021</Text>
+              </CardAction>
             </CardAction>
-          </CardAction>
-          <CardAction separator={true} inColumn={false}>
-            <CardButton
-              onPress={() => navigation.navigate("Shop")}
-              title="RENEW YOUR SUBSCRIPTION"
-              color="rgb(16, 86, 82)"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
-            />
-          </CardAction>
-        </Card>
-      </View>
-      <View style={MyPageComponentStyles.CardContainer}>
-        <Card style={MyPageComponentStyles.winnerCommentCard}>
-          <Text style={MyPageComponentStyles.title}>MY PROFILE</Text>
-          <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>GENDER</Text>
-            <Text style={MyPageComponentStyles.text}>Male</Text>
-          </CardAction>
-          <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>BIRTH DATE</Text>
-          </CardAction>
-          <CardAction separator={false} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>Solar Calendar</Text>
-            <Text style={MyPageComponentStyles.text}>Mar 12, 1992</Text>
-          </CardAction>
-          <CardAction separator={false} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>Lunar Calendar</Text>
-            <Text style={MyPageComponentStyles.text}>Feb 12, 1992</Text>
-          </CardAction>
-          <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>BIRTH TIME</Text>
-            <Text style={MyPageComponentStyles.text}>15:06</Text>
-          </CardAction>
-          <CardAction separator={true} inColumn={false}>
-            <Text style={MyPageComponentStyles.subtitle}>Age</Text>
-            <Text style={MyPageComponentStyles.text}>29</Text>
-          </CardAction>
-          <CardAction separator={true} inColumn={false}>
-            <CardButton
-              onPress={() => navigation.navigate("Profile Adjust")}
-              title="ADJUST"
-              color="rgb(16, 86, 82)"
-              style={{ marginLeft: "auto", marginRight: "auto" }}
-            />
-          </CardAction>
-        </Card>
-      </View>
-      <View style={MyPageComponentStyles.CardContainer}>
-        <Card style={MyPageComponentStyles.winnerCommentCard}>
-          <Text style={MyPageComponentStyles.title}>MY POINTS</Text>
-          <CardAction separator={true} inColumn={false}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("PointDetails")}
-            >
-              <Text style={MyPageComponentStyles.pointDetail}>
-                VIEW DETAILS
-              </Text>
-            </TouchableOpacity>
-            <Text style={MyPageComponentStyles.point}>3,200 P</Text>
-          </CardAction>
-        </Card>
+            <CardAction separator={true} inColumn={false}>
+              <CardButton
+                onPress={() => navigation.navigate("Shop")}
+                title="RENEW YOUR SUBSCRIPTION"
+                color="rgb(16, 86, 82)"
+                style={{ marginLeft: "auto", marginRight: "auto" }}
+              />
+            </CardAction>
+          </Card>
+        </View>
+        <View style={MyPageComponentStyles.CardContainer}>
+          <Card style={MyPageComponentStyles.winnerCommentCard}>
+            <Text style={MyPageComponentStyles.title}>MY PROFILE</Text>
+            <CardAction separator={true} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>GENDER</Text>
+              <Text style={MyPageComponentStyles.text}>Male</Text>
+            </CardAction>
+            <CardAction separator={true} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>BIRTH DATE</Text>
+            </CardAction>
+            <CardAction separator={false} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>Solar Calendar</Text>
+              <Text style={MyPageComponentStyles.text}>Mar 12, 1992</Text>
+            </CardAction>
+            <CardAction separator={false} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>Lunar Calendar</Text>
+              <Text style={MyPageComponentStyles.text}>Feb 12, 1992</Text>
+            </CardAction>
+            <CardAction separator={true} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>BIRTH TIME</Text>
+              <Text style={MyPageComponentStyles.text}>15:06</Text>
+            </CardAction>
+            <CardAction separator={true} inColumn={false}>
+              <Text style={MyPageComponentStyles.subtitle}>Age</Text>
+              <Text style={MyPageComponentStyles.text}>29</Text>
+            </CardAction>
+            <CardAction separator={true} inColumn={false}>
+              <CardButton
+                onPress={() => navigation.navigate("Profile Adjust")}
+                title="ADJUST"
+                color="rgb(16, 86, 82)"
+                style={{ marginLeft: "auto", marginRight: "auto" }}
+              />
+            </CardAction>
+          </Card>
+        </View>
+        <View style={MyPageComponentStyles.CardContainer}>
+          <Card style={MyPageComponentStyles.winnerCommentCard}>
+            <Text style={MyPageComponentStyles.title}>MY POINTS</Text>
+            <CardAction separator={true} inColumn={false}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate("PointDetails")}
+              >
+                <Text style={MyPageComponentStyles.pointDetail}>
+                  VIEW DETAILS
+                </Text>
+              </TouchableOpacity>
+              <Text style={MyPageComponentStyles.point}>3,200 P</Text>
+            </CardAction>
+          </Card>
+        </View>
       </View>
       <View style={MyPageComponentStyles.tabContainer}>
         <TouchableOpacity
