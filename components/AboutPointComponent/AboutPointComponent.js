@@ -40,8 +40,9 @@ const AboutPointComponent = ({ navigation }) => {
               fontWeight: "bold",
             }}
           >
-            Earn points via various ways!{"\n"}Claim special rewards with the
-            point you've earned!{"\n"}
+            You can claim special rewards with earned points. Earn points via
+            various ways! and claim special rewards with the point you've
+            earned!{"\n"}
             {"\n"}Let me tell you how you can earn points.
           </Text>
           <Card.Divider />

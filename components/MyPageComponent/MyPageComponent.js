@@ -45,7 +45,14 @@ const MyPageComponent = ({ navigation }) => {
           </CardAction>
           <CardAction separator={true} inColumn={false}>
             <Text style={MyPageComponentStyles.subtitle}>BIRTH DATE</Text>
-            <Text style={MyPageComponentStyles.text}>Mar 12, 1992 Sol</Text>
+          </CardAction>
+          <CardAction separator={false} inColumn={false}>
+            <Text style={MyPageComponentStyles.subtitle}>Solar Calendar</Text>
+            <Text style={MyPageComponentStyles.text}>Mar 12, 1992</Text>
+          </CardAction>
+          <CardAction separator={false} inColumn={false}>
+            <Text style={MyPageComponentStyles.subtitle}>Lunar Calendar</Text>
+            <Text style={MyPageComponentStyles.text}>Feb 12, 1992</Text>
           </CardAction>
           <CardAction separator={true} inColumn={false}>
             <Text style={MyPageComponentStyles.subtitle}>BIRTH TIME</Text>
