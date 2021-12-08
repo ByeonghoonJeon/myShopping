@@ -15,6 +15,7 @@ import ProfileAdjustComponent from "./components/ProfileAdjustComponent/ProfileA
 import PointDetailComponent from "./components/PointDetailComponent/PointDetailComponent";
 import AboutPointComponent from "./components/AboutPointComponent/AboutPointComponent";
 import RewardComponent from "./components/RewardComponent/RewardComponent";
+import HistoryComponent from "./components/HistoryComponent/HistoryComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -141,6 +142,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "Rewards",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="HistoryComponent"
+          component={HistoryComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "Winning Number History",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />

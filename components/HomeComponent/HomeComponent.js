@@ -77,9 +77,7 @@ const HomeComponent = ({ navigation }) => {
 
           <CardAction separator={true} inColumn={false}>
             <CardButton
-              onPress={() => {
-                console.warn("Clicked [See all history]");
-              }}
+              onPress={() => navigation.navigate("HistoryComponent")}
               title="See all history"
               color="#BD1616"
               style={{
