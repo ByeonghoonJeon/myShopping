@@ -49,9 +49,7 @@ const HomeComponent = ({ navigation }) => {
           <Text style={HomeStyles.cardSubtitle}>My Point </Text>
           <Text style={HomeStyles.point}>3,200 P</Text>
           <CardButton
-            onPress={() => {
-              console.warn("Clicked [View Details]");
-            }}
+            onPress={() => navigation.navigate("PointDetails")}
             title="View Details"
             color="#FEB557"
             style={HomeStyles.viewDetail}
@@ -67,9 +65,7 @@ const HomeComponent = ({ navigation }) => {
               style={{ marginLeft: "auto" }}
             />
             <CardButton
-              onPress={() => {
-                console.warn("Clicked [Learn More]");
-              }}
+              onPress={() => navigation.navigate("AboutPoint")}
               title="Learn More"
               color="#FEB557"
             />

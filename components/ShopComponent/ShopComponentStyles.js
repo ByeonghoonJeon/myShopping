@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 const ShopComponentStyles = StyleSheet.create({
   scrollContainer: {
-    backgroundColor: "#2B2B2B",
+    backgroundColor: "#2E4C6D",
   },
 
   cardView: {

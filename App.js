@@ -13,6 +13,7 @@ import MyPageComponent from "./components/MyPageComponent/MyPageComponent";
 import ShopComponent from "./components/ShopComponent/ShopComponent";
 import ProfileAdjustComponent from "./components/ProfileAdjustComponent/ProfileAdjustComponent";
 import PointDetailComponent from "./components/PointDetailComponent/PointDetailComponent";
+import AboutPointComponent from "./components/AboutPointComponent/AboutPointComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -119,6 +120,16 @@ function MainScreen() {
             headerStyle: { backgroundColor: "#8D2828" },
             headerTintColor: "#fff",
             headerTitle: "Point Details",
+            headerTitleStyle: { fontWeight: "bold" },
+          }}
+        />
+        <Stack.Screen
+          name="AboutPoint"
+          component={AboutPointComponent}
+          options={{
+            headerStyle: { backgroundColor: "#8D2828" },
+            headerTintColor: "#fff",
+            headerTitle: "About Point",
             headerTitleStyle: { fontWeight: "bold" },
           }}
         />

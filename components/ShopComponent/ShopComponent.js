@@ -6,20 +6,10 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import Icon2 from "react-native-vector-icons/FontAwesome5";
 const ShopComponent = ({ navigation }) => {
   return (
-    <ScrollView style={ShopComponentStyles.container}>
+    <ScrollView style={ShopComponentStyles.scrollContainer}>
       <View style={ShopComponentStyles.cardView}>
         <PricingCard
-          color="#4f9deb"
-          title="FREE"
-          price="$0"
-          info={[
-            "2 sets of free lucky numbers",
-            "1st Prize Possibility: 1/4,120,000",
-          ]}
-          button={{ title: "GET STARTED", icon: "flight-takeoff" }}
-        />
-        <PricingCard
-          color="#4f9deb"
+          color="#8D2828"
           title="LUCKY DEAL 70% OFF"
           price="$60"
           info={[
@@ -29,10 +19,10 @@ const ShopComponent = ({ navigation }) => {
             "2nd Prize Possibility: 1/27,150",
             "3rd Prize Possibility: 1/715",
           ]}
-          button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+          button={{ title: "TAKE YOUR CHANCE", icon: "flight-takeoff" }}
         />
         <PricingCard
-          color="#4f9deb"
+          color="#34BE82"
           title="BEST DEAL 20% OFF"
           price="$40"
           info={[
@@ -42,10 +32,13 @@ const ShopComponent = ({ navigation }) => {
             "2nd Prize Possibility: 1/27,150",
             "3rd Prize Possibility: 1/715",
           ]}
-          button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+          button={{
+            title: "GET STARTED",
+            icon: "flight-takeoff",
+          }}
         />
         <PricingCard
-          color="#4f9deb"
+          color="#34BE82"
           title="HOT DEAL 10% OFF"
           price="$19"
           info={[
@@ -57,7 +50,7 @@ const ShopComponent = ({ navigation }) => {
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
         />
         <PricingCard
-          color="#4f9deb"
+          color="#34BE82"
           title="STARTER"
           price="$10"
           info={[
@@ -66,6 +59,13 @@ const ShopComponent = ({ navigation }) => {
             "2nd Prize Possibility: 1/135,750",
           ]}
           button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+        />
+        <PricingCard
+          color="#DED9C4"
+          title="FREE"
+          price="$0"
+          info={["2 sets of free lucky numbers"]}
+          button={{ title: "GET STARTED" }}
         />
       </View>
       <View style={ShopComponentStyles.tabContainer}>
